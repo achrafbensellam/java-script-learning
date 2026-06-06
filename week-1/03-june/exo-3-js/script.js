@@ -1,0 +1,10 @@
+let x = 20;
+let y = 5;
+let z = 4;
+console.log("1.adition  :"+ (x+y) );
+console.log("2.subtraction  :"+(x - y));
+console.log("3.Multiplication  : "+(x * y) );
+console.log("4.Division  :"+ (x / y));
+console.log("5.Subtraction  :"+ (y - x) );
+console.log("6.Modulo  :"+(x % y));
+console.log("7.Modulo :"+(x % z));
