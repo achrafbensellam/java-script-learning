@@ -1,0 +1,162 @@
+/* ==========================
+   Reset
+========================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f4f6f9;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* ==========================
+   Main Card
+========================== */
+
+main {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 30px;
+}
+
+form {
+    width: 500px;
+    background: white;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 15px 40px rgba(0,0,0,.12);
+}
+
+/* ==========================
+   Input & Button
+========================== */
+
+input {
+    width: 100%;
+    padding: 14px;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    font-size: 16px;
+    margin-bottom: 15px;
+    transition: .3s;
+}
+
+input:focus {
+    outline: none;
+    border-color: royalblue;
+}
+
+#btn {
+    width: 100%;
+    padding: 14px;
+    border: none;
+    background: royalblue;
+    color: white;
+    font-size: 17px;
+    font-weight: bold;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: .3s;
+    margin-bottom: 25px;
+}
+
+#btn:hover {
+    background: #274fcf;
+}
+
+/* ==========================
+   Student List
+========================== */
+
+ul {
+    list-style: none;
+}
+
+li {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background: #f7f7f7;
+    padding: 12px;
+    border-radius: 8px;
+    margin-bottom: 12px;
+    transition: .3s;
+}
+
+li:hover {
+    background: #ececec;
+}
+
+/* Student Name */
+
+li span {
+    flex: 1;
+    font-size: 17px;
+    word-break: break-word;
+}
+
+/* ==========================
+   Buttons
+========================== */
+
+li button {
+    border: none;
+    padding: 8px 14px;
+    border-radius: 6px;
+    cursor: pointer;
+    color: white;
+    font-weight: bold;
+    transition: .3s;
+}
+
+/* Edit */
+
+li button:first-of-type {
+    background: #f39c12;
+}
+
+li button:first-of-type:hover {
+    background: #d68910;
+}
+
+/* Delete */
+
+li button:last-of-type {
+    background: #e74c3c;
+}
+
+li button:last-of-type:hover {
+    background: #c0392b;
+}
+
+/* ==========================
+   Editable Text
+========================== */
+
+span[contenteditable="true"] {
+    background: #fff9d8;
+    border: 2px dashed #f1c40f;
+    padding: 4px 8px;
+    border-radius: 5px;
+}
+
+/* ==========================
+   Counter
+========================== */
+
+p {
+    margin-top: 20px;
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+    color: #555;
+}
