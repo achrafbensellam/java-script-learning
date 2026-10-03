@@ -1,0 +1,148 @@
+/** ============================ start besmillah ================================*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+
+}
+
+body {
+    background-color: rgb(233, 246, 246);
+}
+
+header {
+    background-image: linear-gradient(90deg, rgb(32, 3, 148)70%, rgb(23, 111, 235));
+    color: white;
+    padding: 2%;
+}
+
+main {
+    margin: 1.5% 5%;
+    background-color: white;
+    /* height: 70vh; */
+    border: 1px dashed rgb(210, 210, 210);
+    border-radius: 15px;
+}
+
+#cardsDiv {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+    background-color: rgb(240, 237, 237);
+    padding: 2%;
+    margin: 2%;
+    border-radius: 10px;
+}
+
+footer {
+    background-color: rgb(1, 1, 70);
+    color: white;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cards {
+    background-color: rgba(4, 4, 253, 0.592);
+    color: rgb(255, 255, 255);
+    padding: 2% 4%;
+    border: solid 6px rgb(3, 3, 116);
+    border-radius: 12px;
+    line-height: 3rem;
+}
+
+.nameparag {
+    font-weight: 550;
+    font-size: 40px;
+}
+
+#form {
+    background-color: rgb(240, 237, 233);
+    margin: 0% 2%;
+    border-radius: 10px;
+    padding: 1%;
+
+}
+
+.senderResever {
+    display: flex;
+}
+
+.sender {
+    width: 50%;
+padding: 0% 2%;
+}
+
+.reciever {
+    width: 50%;
+    padding: 0% 2%;
+}
+
+#senderSelect {
+    width: 100%;
+      border: none;
+    height: 40px;
+    text-align: center;
+    border-radius: 7px;
+    box-shadow: 1px 1px 5px 1px rgb(101, 131, 134) ;
+}
+
+#receiverSelect {
+    width: 100%;
+    border: none;
+    height: 40px;
+    text-align: center;
+    border-radius: 7px;
+    box-shadow: 1px 1px 5px 1px rgb(101, 131, 134) ;
+
+}
+.forAMOUNT{
+    width: 100%;
+    padding: 0% 2%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#amountinput{
+    width: 60%;
+      border: none;
+    height: 40px;
+    text-align: center;
+    border-radius: 7px;
+    box-shadow: 1px 1px 5px 1px rgb(101, 131, 134) ;
+}
+.btn{
+    width: 30%;
+    border: none;
+    height: 40px;
+    text-align: center;
+    border-radius: 7px;
+    box-shadow: 1px 1px 5px 1px rgb(101, 131, 134) ;
+    background-color: blue;
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+    margin-top: 2%;
+}
+.historyDiv{
+    padding: 2%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+     background-color: rgb(240, 237, 233);
+     margin: 2%;
+     border-radius: 10px;
+
+
+}
+#searchinput{
+   width: 60%;
+      border: none;
+    height: 40px;
+    text-align: center;
+    border-radius: 7px;
+    box-shadow: 1px 1px 5px 1px rgb(101, 131, 134) ; 
+}

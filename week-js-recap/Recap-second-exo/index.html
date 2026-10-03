@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="public/css/app.css">
+  <title>JAVASCRIPT RECAP — MINI EXPENSE TRACKER</title>
+</head>
+
+<body>
+  <!--* ====================== start besmillah ======================= -->
+  <!-- ! this is the header -->
+  <header>
+    <div>
+    <h1>Expense Tracker</h1>
+    <p style="color: rgb(197, 219, 240);">Keep track of your money, build better habits.</p>
+    </div>
+    <nav>
+      <button class="header-btn" type="button">CONTACT</button>
+    </nav>
+
+  </header>
+  <!-- ! this is the main  -->
+  <main>
+    <form action="" class="form">
+      <div>
+        <h3 style="font-size: 25px; font-weight: 700;">Add New Expense</h3>
+        <p style="color: rgb(87, 91, 94);">Fill in the details below to add a new expense.</p>
+      </div>
+      <div class="inputs-fother-contenaire">
+      <div class="sizing-divs">
+        <label class="expense-title" for="">Expense Name</label>
+        <br>
+      <input  class="expense-input inputsize" placeholder="e.g. Lunch, Bus Ticket ..." type="text" name="" id="">
+      </div>
+      <div class="sizing-divs">
+        <label class="amount-title" for="">Amount</label>
+        <br>
+      <input class="amount inputsize" placeholder="e.g. 50" type="number">
+      </div>
+      <div class="sizing-divs">
+        <label class="category-title" for="">Category</label>
+        <br>
+      <select  class="category inputsize" name="" id="select">
+        <option value="">SERVICES</option>
+        <option>FOOD</option>
+        <option>TRANSPORT</option>
+        <option>SHOPPING</option>
+        <option>OTHER</option>
+      </select>
+      </div>
+      <button class="sizing-btn" type="submit">
+        <span style="font-size: 25px;font-weight: lighter;
+        position: absolute; top: 3.5px; left: 30px;">+</span>
+         Add Expense</button>
+    </div>
+    <p style="text-align: center;" id="erorr"></p>
+    </form>
+    <div class="totalandnumexpense">
+      <div class="total">
+        <p>Total Amount</p>
+        <p id="totalamount">$ 0.00</p>
+      </div>
+      <div class="numofexpenses">
+        <p>Number of Expenses</p>
+        <p id="numexpenses">0</p>
+      </div>
+    </div>
+    <div class="displayExpenses">
+      <p>Expenses</p>
+
+    </div>
+  </main>
+  <!--! this is the footer  -->
+  <footer>
+    <p>&copy; MolenGeek || Al Hociema</p>
+    <p>Coding School 2026</p>
+    <p style="cursor: pointer;">achrafbensellam@gmail.com</p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+
+</html>

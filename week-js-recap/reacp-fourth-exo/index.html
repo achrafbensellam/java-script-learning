@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="public/css/app.css">
+  <title> TRANSFER MONEY :money_with_wings:</title>
+</head>
+
+<body>
+  <!--* ====================== start besmillah ======================= -->
+  <!-- ! this is the header -->
+  <header>
+    <h1>Bnak Transfer</h1>
+  </header>
+  <!-- ! this is the main -->
+  <main>
+    <div id="cardsDiv">
+
+
+    </div>
+    <form action="" id="form">
+      <label for="" class="senderResever">
+        <label for="" class="sender">
+          <label for="">sender : </label><br>
+          <select name="" id="senderSelect"><br>
+            <option value="">Choose sender</option>
+            <option id="sender">Ahmed</option>
+            <option id="sender">Sara</option>
+            <option id="sender">Omar</option>
+          </select>
+        </label>
+        <label for="" class="reciever">
+          <label for="">receiver : </label><br>
+          <select name="" id="receiverSelect"><br>
+            <option value="">Choose sender</option>
+            <option>Ahmed</option>
+            <option>Sara</option>
+            <option>Omar</option>
+          </select>
+        </label>
+      </label>
+      <br>
+      <label for="" class="forAMOUNT">
+      <label for="">amount</label><br>
+      <input type="number" id="amountinput">
+      <br><br>
+      <p id="ErrorMSG"></p>
+      <button type="submit" class="btn">Transfer</button>
+    </label>
+    </form>
+    <div class="historyDiv">
+      <h3>history</h3>
+      <input type="text" placeholder="search" id="searchinput">
+      <button id="undobtn">Undo last transfer</button>
+      <div id="transferTransactions">
+      </div>
+    </div>
+  </main>
+  <!-- ! this is the  footer -->
+  <footer>
+    <p>achraf@bensellam</p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+
+</html>

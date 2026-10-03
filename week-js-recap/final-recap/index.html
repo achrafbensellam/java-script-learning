@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="public/css/app.css">
+  <script src="https://kit.fontawesome.com/de123c39c0.js" crossorigin="anonymous"></script>
+
+  <title>CODEBLOOM</title>
+</head>
+
+<body>
+  <!--* ====================== start besmillah ======================= -->
+  <!-- ! this the header -->
+  <header class="header">
+    <h1 class="title">codeBloom.</h1>
+    <nav class="navbar">
+      <div class="our-courses" style="color: rgb(100, 119, 73);">Our courses<span><i class="fa-solid fa-caret-down"></i></span>
+      <ul class="courses">
+        <li class="list-items">HTML & CSS</li>
+        <li class="list-items">JavaScript</li>
+        <li class="list-items">React</li>
+      </ul>
+      </div>
+      <button type="submit" onclick="document.querySelector('.form').scrollIntoView({behavior: 'smooth'})" class="navbarbtn"> Start learning<span class="arrow"><i
+        class="fa-solid fa-location-arrow"></i></span></button>
+      </nav>
+      
+  </header>
+  <!-- ! this is the main -->
+  <main class="main">
+    <!-- todo first section -->
+    <section>
+      <p class="parag1">SMALL STEPS. REAL PROJECTS.</p>
+      <p class="parag2">Your next skill
+        starts here.</p>
+      <p class="parag3">Choose a course, find your rhythm, and build something you can be
+        proud of.</p>
+    </section>
+    <!-- todo second section -->
+    <section class="second-Section">
+      <div class="information-div">
+        <p class="parag4">THE CODEBLOOM APPROACH</p>
+        <p class="parag5">Less watching.</p>
+        <p class="parag6">More building.</p>
+        <p class="parag7">01 -- Learn by doing</p>
+        <p class="parag8">Turn each new concept into a practical exercise.</p>
+        <p class="border"></p>
+        <p class="parag7">02 -- Get guidance</p>
+        <p class="parag8">Ask questions and work through problems with a coach.</p>
+        <p class="border"></p>
+        <p class="parag7">03 -- Finish with a project</p>
+        <p class="parag8">Put your skills together in something you built yourself.</p>
+        <p class="parag13">Your pace, your starting point. Tell us a little about
+          yourself to create your course summary.</p>
+      </div>
+      <form action="" class="form">
+        <label for="" class="form-title">Find your starting point</label>
+        <br>
+        <label for="" class="form-para-1">Fill in your details to prepare your learning plan.</label>
+        <br><br>
+        <label for="" class="form-input-title">Full name</label>
+        <br>
+        <p id="errorName"></p>
+        <input class="input-1" type="text" placeholder="e.g. Sara Ahmed" id="NameInput">
+        <br>
+        <label for="" class="form-input-title">Email address</label>
+        <br>
+        <p id="errorEmail"></p>
+        <input class="input-1" type="email" placeholder="you@example.com" name="" id="EmailInput">
+        <br>
+        <!-- ? -->
+        <label for="" class="first-select-container">
+          <label for=""  class="first-slects">
+            <label for="" class="form-input-title">Choose a course</label>
+            <br>
+            <p id="errorCoures"></p>
+            <select name="" id="CourseSelect" class="input-select">
+              <option value="">Select a course</option>
+            </select>
+          </label>
+          <br>
+          <label for="" class="first-slects">
+            <label for="" class="form-input-title">Your experience</label>
+            <br>
+            <p id="errorExp"></p>
+            <select name="" id="ExperienceSelect" class="input-select">
+              <option value="">Select your level</option>
+              <option >Beginner</option>
+              <option >intermediat</option>
+              <option >advanced</option>
+            </select>
+          </label>
+        </label>
+        <br>
+        <!-- ? -->
+        <label for="" class="first-select-container">
+          <label for="" class="first-slects">
+            <label for="" class="form-input-title">Preferred schedule</label>
+            <br>
+            <p id="errorSchedule"></p>
+            <select name="" id="ScheduleSelect" class="input-select">
+              <option value="">Select a schedule</option>
+              <option >morning - 09:00-11:00</option>
+              <option >evening - 02:00-05:00</option>
+              <option >full-time - 09:00-05:00</option>
+            </select>
+          </label>
+          <br>
+          <label for="" class="first-slects">
+            <label for="" class="form-input-title">Learning format</label>
+            <br>
+            <p id="errorFormat"></p>
+            <select name="" id="FormatSelect" class="input-select">
+              <option value="">Select a format</option>
+              <option >Online</option>
+              <option >At class</option>
+            </select>
+          </label>
+        </label>
+        <br>
+        <!-- ? -->
+        <label for="">
+          <p id="errorConfirmation"></p>
+          <input class="checkbox" type="checkbox" name=""  id=" confirmationInput">
+          <label id="parag" for="" class="parag8" style="font-size: 13.5px;">I confirm that my information is correct.</label>
+        </label>
+        <br>
+        <button type="submit" class="form-btn">Create my learning plan </button>
+        <br>
+        <label for="" class="form-last-para">Classroom demo - no information is sent or saved.</label>
+        <div class="div-form">
+          <div class="checkMarck"><i class="fa-solid check-style fa-check"></i></div>
+          <p class="readyPlan">Your plan is ready!</p>
+          <p style="color: gray;" id="introPara">Nice to meet you, Davis Spence. Here is your learning plan.</p>
+          <div class="student-info">
+            <p class="begener" id="levelDisply"></p>
+            <h2 class="javaScript" id="courseDisplay"></h2>
+            <p style="color: gray; margin-bottom: 2%;">Your project: build an interactive expense tracker.</p>
+            <!-- ? -->
+            <div class="Information">
+              <p style="color: gray;">Student</p>
+              <h5 class="Info" id="student"></h5>
+            </div>
+            <!-- ? -->
+            <div class="Information">
+              <p style="color: gray;">Email</p>
+              <h5 class="Info" id="EmailDisplay"></h5>
+            </div>
+            <!-- ? -->
+            <div class="Information">
+              <p style="color: gray;">Schedule</p>
+              <h5 class="Info" id="ScheduleDisplay"></h5>
+            </div>
+            <!-- ? -->
+            <div class="Information">
+              <p style="color: gray;">Format</p>
+              <h5 class="Info" id="FormatDisplay"></h5>
+            </div>
+            <!-- ? -->
+            <div class="Information">
+              <p style="color: gray;">Duration</p>
+              <h5 class="Info">6 weeks</h5>
+            </div>
+            <!-- ? -->
+          </div>
+          <p style="color: rgb(6, 84, 6); margin: 2% 0%;">Your next step: prepare a computer, headphones and an internet connection.</p>
+          <button id="editBTN" type="button">Edit my information</button>
+        </div>
+
+      </form>
+    </section>
+  </main>
+  <!-- ! this is the footer -->
+   <footer>
+    <p class="fot-para">CodeBloom -A little practice, every day</p>
+   </footer>
+  <script src="script.js"></script>
+</body>
+
+</html>
