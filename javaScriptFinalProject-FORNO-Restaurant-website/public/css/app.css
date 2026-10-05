@@ -632,3 +632,33 @@ font-weight: 600;
 .bfoter-second-div-para1{
     color: gray;
 }
+/*!========================================================= */
+/*!========================================================= */
+/*!========================================================= */
+/* !============ ABOUT US PAGE STARTS FROM HERE =============*/
+/* todo about us hero section */
+.about-us-hero-section{
+    padding: 4% 6%;
+
+}
+.about-us-hero-section-para1{
+    font-weight: 600;
+    font-size: 14px;
+    color: red;
+}
+.about-us-hero-section-para2{
+    font-weight: 800;
+    font-size: 64px;
+}
+.about-us-hero-section-para3{
+color: gray;
+width: 40%;
+line-height: 1.5rem;
+}
+.about-us-hero-section-para4{
+font-family: Georgia, "Times New Roman", serif;
+  font-style: italic;
+  font-weight: 400;
+      color: rgb(245, 161, 131);
+      color: #d83a26;
+}
