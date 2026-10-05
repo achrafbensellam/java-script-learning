@@ -91,3 +91,123 @@ img {
     margin-left: 2%;
     border-radius: 50%;
 }
+/* todo home page hero section  */
+.home-page-hero-section{
+    display: flex;
+    padding: 0% 6%;
+    margin: 6% 0%;
+}
+.home-page-hero-pic{
+    transform: scale(1.03);
+}
+.hero-section-info{
+    width: 50%;
+}
+.hero-section-picture{
+    width: 50%; 
+    position: relative;
+    overflow: hidden;
+}
+.hero-sec-pic-para1{
+    position: absolute;
+    top: 40px;
+    right: 0;
+    padding: 1%;
+    background-color: white;
+    color: gray;
+    font-size: 13px;
+    border-radius: 3px;
+
+}
+.hero-sec-pic-para2{
+    position: absolute;
+    bottom:60px;
+    left: 2px;
+    background-color: red;
+    border: 10px solid white;
+    outline: 1px red solid;
+    border-radius:100px;
+    padding: 5% 2.5%;
+    color: white;
+    text-align: center;
+    transform: rotate(-15deg);
+
+    
+}
+.hero-sec-pic-para3{
+ font-weight: 500;
+    font-size: 60px;
+    /* width: 60%; */
+    /* color: red; */
+    font-family: Georgia, "Times New Roman", serif;
+  font-style: italic;
+}
+.hero-sec-pic-para4{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    color: gray;
+
+}
+.hero-section-info-para{
+    font-weight: 600;
+}
+.hero-section-info-para1{
+    color: red;
+    font-size: 80px;
+    position: relative;
+    top: -20px;
+    margin-right: 2%;
+}
+.hero-section-info-para2{
+    font-weight: 900;
+    font-size: 100px;
+    /* width: 60%;   */
+}
+.hero-section-info-para3{
+    font-weight: 900;
+    font-size: 100px;
+    /* width: 60%; */
+}
+.hero-section-info-para4{
+    font-weight: 500;
+    font-size: 100px;
+    /* width: 60%; */
+    color: red;
+    font-family: Georgia, "Times New Roman", serif;
+  font-style: italic;
+}
+.hero-section-info-para5{
+    font-weight: 500;
+    font-size: 20px;
+    color: rgb(133, 127, 127);
+    width: 70%;
+    margin:4% 0%;
+}
+.hero-section-info-btn{
+    background-color: red;
+    color: white;
+    padding: 2.5% 7%;
+    border-radius: 7px;
+    border: none;
+    font-weight: 600;
+    cursor: pointer;
+
+}
+.hero-section-info-para6{
+    display: flex;
+    align-items: center;
+    gap:10px ;
+    margin-top: 4%;
+}
+.hero-section-info-para7{
+    border: 1px solid rgb(175, 168, 168);
+    border-radius: 50%;
+    padding:  1.5% 2%;
+    color: gray;
+}
+.hero-section-info-para8{
+    width: 29.35%;
+    /* font-size: 15px; */
+    color: gray;
+}
