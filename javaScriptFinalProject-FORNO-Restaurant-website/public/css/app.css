@@ -394,3 +394,81 @@ img {
     border-radius: 5px;
     cursor: pointer;
 }
+/* todo fifth section */;
+.chef{
+    display: flex;
+    /* gap: 30px; */
+}
+.chef-Section-pic-div{
+    position: relative;
+    width: 50%;
+    border-radius: 10px;
+    overflow: hidden;
+}
+.chef-Section-pic-div-para{
+    position: absolute;
+    bottom: 0;
+    left: 35px;
+    background-color: white;
+    font-weight: 600;
+    padding: 2%;
+    width: 90%;
+    margin: 4%0%;
+    border-radius: 5px;
+    font-size: 13px;
+
+}
+.chef-Section-pic-div-pic{
+    transform: scale(1.1);
+    height: 100%;
+}
+.chef-Section-info-div{
+    width: 50%;
+}
+.chef-Section-info-div-para1{
+    font-weight: 600;
+    color: red;
+    margin-bottom: 1.5%;
+}
+.chef-Section-info-div-para2{
+    font-weight: 800;
+    font-size: 45px;
+}
+.chef-Section-info-div-para3{
+    font-family: Georgia, "Times New Roman", serif;
+  font-style: italic;
+  font-weight: 400;
+  color: red;
+}
+.chef-Section-info-div-para4{
+    color: gray;
+    font-size: 17px;
+    width: 100%;
+    line-height: 2rem;
+    margin-top: 2%;
+}
+.chef-Section-info-div-para5{
+    font-weight: 600;
+    font-size: 20px;
+    border-top: 1px solid rgb(178, 173, 173);
+    margin-top: 4%;
+    padding-top: 3%;
+    margin-bottom: 1.5%;
+}
+.chef-Section-info-div-para6{
+    color: red;
+    font-weight: 600;
+    font-size: 17px;
+    margin-right: 4%;
+}
+.chef-Section-info-div-para7{
+    color: gray;
+    margin-left: 7%;
+}
+.chef-Section-info-div-para8{
+    color: #a62a1b;
+    font-weight: 600;
+}
+.chef-Section-info-div-para9{
+    margin-top: 6%;
+}
