@@ -548,3 +548,32 @@ justify-content: space-between;
 color: white;
 font-weight: 600;
 }
+/* todo section befor footer */
+.section-befor-footer{
+    display: flex;
+    justify-content: space-between;
+    padding: 3% 6%;
+    border-bottom: 1px solid rgb(220, 209, 209);
+    align-items: center;
+}
+.section-befor-footer-para1{
+    font-weight: 800;
+    font-size: 25px;
+    width: 18%;
+}
+.section-befor-footer-para2{
+    font-weight: 800;
+    font-size: 25px;
+    font-family: Georgia, "Times New Roman", serif;
+  font-style: italic;
+  font-weight: 400;
+    color: rgb(215, 54, 34);
+
+}
+.section-befor-footer-btn{
+    padding: 1% 2%;
+    border-radius: 10px;
+    border: 2px solid black;
+    font-weight: 600;
+    cursor: pointer;
+}
