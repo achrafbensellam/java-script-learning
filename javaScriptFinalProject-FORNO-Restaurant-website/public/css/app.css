@@ -226,7 +226,7 @@ img {
 }
 /* todo pizza cards section  */
 .pizzas-crds-section{
-    padding: 0% 6%;
+    padding:5% 6%;
 }
 .cards-div{
     display: grid;
@@ -352,4 +352,45 @@ img {
     padding: 2.5%;
     border-radius: 5px;
     border: none;
+}
+/* todo  fourth section */
+.fourth-section{
+    background-color: rgb(216, 58, 38);
+    color: white;
+    display: flex;
+    padding: 3% 6%;
+}
+.fourth-section-div1{
+    width: 50%;
+}
+.fourth-section-div2{
+    width: 34%;
+    line-height: 1.5rem;
+}
+.fourth-section-div1-para1{
+    font-weight: 600;
+    font-size: 14px;
+}
+.fourth-section-div1-para2{
+    font-weight: 800;
+    font-size: 50px;
+}
+.fourth-section-div1-para3{
+    font-weight: 800;
+    font-size: 50px;
+}
+.fourth-section-div1-para4{
+     font-family: Georgia, "Times New Roman", serif;
+  font-style: italic;
+  font-weight: 400;
+  color: rgb(252, 213, 174);
+
+}
+.fourth-section-div2-btn{
+    color: #a62a1b;
+    font-weight: 600;
+    padding: 3%;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
 }
