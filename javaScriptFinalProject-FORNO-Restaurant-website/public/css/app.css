@@ -211,3 +211,16 @@ img {
     /* font-size: 15px; */
     color: gray;
 }
+/* todo second section */
+.second-section{
+    padding: 2% 6%;
+    display: flex;
+    justify-content: space-between;
+    font-weight: 600;
+    border-top: 1px solid rgb(190, 189, 189);
+    border-bottom: 1px solid rgb(190, 189, 189);
+}
+.second-section-para1-nums{
+    color: red;
+    margin-right: 20px;
+}
