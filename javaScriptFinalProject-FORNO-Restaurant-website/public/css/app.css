@@ -1,1 +1,93 @@
 /** ============================ start besmillah ================================*/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root {
+  --paper: #f5f1e9;
+  --surface: #fffaf1;
+  --ink: #25241f;
+  --muted: #6e6a61;
+  --red: #d83a26;
+  --red-dark: #a62a1b;
+  --line: #dcd6cb;
+}
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  color: var(--ink);
+  background-color: var(--paper);
+}
+h1, h2, h3 {
+  font-weight: 800;
+}
+em {
+  font-family: Georgia, "Times New Roman", serif;
+  font-style: italic;
+  font-weight: 400;
+}
+
+button, input, textarea {
+  font: inherit;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+/* ! header style */
+.header{
+    display: flex;
+    justify-content: space-between;
+    padding: 1% 6%;
+    border-bottom: 0.5px solid rgb(190, 189, 189);
+}
+.header-title-point{
+    color: red;
+}
+.header-title-underPara{
+    font-size: 10px;
+}
+.header-navBar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
+    width: 50%;
+}
+.header-navBar-list{
+    display: flex;
+    list-style: none;
+    gap: 30px;
+}
+.header-navBar-links{
+    text-decoration: none;
+    color: black;
+}
+.header-navBar-links:focus{
+    color: red;
+}
+.navBar-lists{
+    font-weight: 550;
+}
+.header-navBar-btn{
+    border: none;
+    border:0.5px solid gray;
+    padding: 2%;
+    border-radius: 5px;
+    gap: 30px;
+    width: 30%;
+    cursor: pointer;
+}
+.cart-icon{
+    margin-right: 2%;
+    font-size: 20px;
+}
+.button-navBar-span{
+    background-color: red;
+    color: white;
+    padding: 2% 4.5%;
+    margin-left: 2%;
+    border-radius: 50%;
+}
