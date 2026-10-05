@@ -224,3 +224,132 @@ img {
     color: red;
     margin-right: 20px;
 }
+/* todo pizza cards section  */
+.pizzas-crds-section{
+    padding: 0% 6%;
+}
+.cards-div{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 3%;
+}
+.Margherita-card{
+    background-color: rgb(240, 234, 222);
+    /* height: 500px; */
+    border: 1px solid rgb(220, 213, 213);
+    border-radius: 12px;
+    overflow: hidden;
+
+}
+.Margherita-pic{
+    position: relative;
+    background-color: rgb(230, 218, 200);
+    margin: 0% 6%;
+}
+.ORIGINALE{
+    position: absolute;
+    top: 10px;
+    background-color: white;
+    color: #a62a1b;
+    font-weight: 600;
+    font-size: 15px;
+    padding: 1.5%;
+    border-radius: 3px;
+    left: -10px;
+}
+.pizzaNum{
+     position: absolute;
+    bottom: 15px;
+    right: -17px;
+    font-size: 15px;
+    color: gray;
+}
+.Margherita-card-info{
+    background-color: white;
+    line-height: 2rem;
+    padding: 0% 6%;
+}
+.pizzas-crds-section-para1{
+    color: red;
+    font-weight: 600;
+    font-size: 15px;
+}
+.pizzas-crds-section-para2{
+    display: flex;
+    justify-content: space-between;
+}
+.pizzas-crds-section-para3{
+    font-weight: 800;
+    font-size: 50px;
+}
+.pizzas-crds-section-para4{
+    color: red;
+    font-family: Georgia, "Times New Roman", serif;
+  font-style: italic;
+  font-weight: 500;
+}
+.pizzas-crds-section-para5{
+    display: flex;
+    width: 100%;
+    gap: 1%;
+    align-items: center;
+
+}
+.pizzas-crds-section-input{
+    width: 70%;
+    height: 50px;
+    display: flex;
+    background-color: white;
+    padding: 0% 2%;
+    border: 1px solid rgb(200, 199, 199);
+    border-radius: 5px;
+    margin: 2% 0%;
+}
+.pizzas-crds-section-input1{
+    width: 100%;
+    border: none;
+    outline: none;
+    margin-left: 1%;
+}
+.pizzas-crds-section-input2{
+    width: 30%;
+    border-radius: 5px;
+    height: 50px;
+   
+    border: 1px solid rgb(208, 207, 207);
+}
+.pizzas-crds-section-icon{
+    font-size: 25px;
+    position: relative;
+    top: 10px;
+    color: gray;
+}
+.Margherita-card-info-para1{
+    color: gray;
+    font-weight: 550;
+    font-size: 15px;
+}
+.Margherita-card-info-para2{
+    font-weight: 800;
+    font-size: 25px;
+}
+.Margherita-card-info-para4{
+    display: flex;
+    justify-content: space-between;
+    /* margin: 6% 0%; */
+    padding: 7% 0%;
+
+}
+.Margherita-card-info-para5{
+    font-weight: 800;
+    font-size: 25px;
+}
+.Margherita-card-info-btn{
+    background-color: red;
+    color: white;
+    font-weight: 600;
+    cursor: pointer;
+    padding: 2.5%;
+    border-radius: 5px;
+    border: none;
+}
