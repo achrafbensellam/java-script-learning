@@ -472,3 +472,79 @@ img {
 .chef-Section-info-div-para9{
     margin-top: 6%;
 }
+/* todo stor branches section */
+.stor-branches-section-info{
+display: flex;
+justify-content: space-between;
+}
+.stor-branches-section-info-para1{
+    color: rgb(245, 161, 131);
+    font-weight: 600;
+    font-size: 16.5px;
+
+}
+.stor-branches-section-info-para2{
+    font-weight: 800;
+    font-size: 45px;
+}
+.stor-branches-div{
+    display: flex;
+    margin-top: 3%;
+    gap: 2%;
+    
+}
+.stor-branches-section{
+    background-color: rgb(37, 36, 31);
+    color: white;
+    padding: 4% 6%;
+}
+.stor-branches-section-info-para3{
+    position: relative;
+    width: 22%;
+    
+}
+.stor-branches-section-info-para4{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    line-height: 1.5rem;
+    color:rgb(169, 157, 134) ;
+
+}
+.stor-branches-section-info-para5{
+    font-family: Georgia, "Times New Roman", serif;
+    font-style: italic;
+    font-weight: 400;
+    color: rgb(245, 161, 131);
+    
+}
+.stor-branches-div-card{
+    border-top: 1px solid gray;
+    padding-top: 1.5%;
+    width: 100%;
+}
+.stor-branches-div-card-para1{
+    color:rgb(169, 157, 134) ;
+    padding: 6% 0%;
+}
+.stor-branches-div-card-para2{    
+    color: rgb(245, 161, 131);
+    font-weight: 600;
+
+}
+.stor-branches-div-card-para3{    
+    font-weight: 600;
+    font-size: 27px;
+    padding: 2% 0%;
+}
+.stor-branches-div-card-para4{    
+    color:rgb(150, 142, 128) ;
+    line-height: 1.5rem;
+    padding: 8% 0%;
+    /* color: gray; */
+
+}
+.stor-branches-div-card-para6{    
+color: white;
+font-weight: 600;
+}
