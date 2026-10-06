@@ -798,3 +798,12 @@ font-family: Georgia, "Times New Roman", serif;
   font-weight: 400;
   color: #d83a26;
 }
+.chef1{
+    display: flex;
+    padding: 0% 6%;
+    gap: 5%;
+    margin: 4% 0%;
+}
+.about-us{
+    width: 80%;
+}
