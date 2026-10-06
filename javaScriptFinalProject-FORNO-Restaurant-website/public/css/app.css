@@ -731,3 +731,70 @@ padding: 4% 0%;
     padding: 0.5%;
     font-size: 13px;
 }
+/* todo about us ingrediant section */
+.about-us-ingrediant-section{
+    padding: 4% 6%;
+
+}
+.about-us-ingrediant-section-para1{
+    font-weight: 600;
+    font-size: 15px;
+    color: #d83a26;
+}
+.about-us-ingrediant-section-para2{
+    font-weight: 800;
+    font-size: 45px;
+}
+.about-us-ingrediant-section-para3{
+    font-family: Georgia, "Times New Roman", serif;
+  font-style: italic;
+  font-weight: 400;
+      color: #d83a26;
+
+}
+.about-us-ingrediant-section-para4{
+    display: flex;
+    justify-content: space-between;
+  padding: 2% 0%;
+
+
+}
+.about-us-ingrediant-section-para5{
+    border-top: 1px solid rgb(182, 176, 176);
+    width: 28%;
+}
+.about-us-ingrediant-section-para6{
+    color: #d83a26;
+    font-weight: 600;
+    padding: 3% 0%;
+}
+.about-us-ingrediant-section-para7{
+    font-weight: 600;
+    font-size: 25px;
+}
+.about-us-ingrediant-section-para8{
+    color: gray;
+    padding-top: 3%;
+}
+.about-us-ingrediant-section-para9{
+background-color: rgb(235, 228, 215);
+display: flex;
+flex-direction: column;
+padding: 4% 0%;
+align-items: center;
+}
+.about-us-ingrediant-section-para10{
+width: 40%;
+font-weight: 800;
+font-size: 40px;
+}
+.about-us-ingrediant-section-para11{
+color: gray;
+padding: 2% 0%;
+}
+.about-us-ingrediant-section-para12{
+font-family: Georgia, "Times New Roman", serif;
+  font-style: italic;
+  font-weight: 400;
+  color: #d83a26;
+}
