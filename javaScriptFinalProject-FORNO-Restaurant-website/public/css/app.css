@@ -141,10 +141,10 @@ img {
 .header-navBar-btn {
     border: none;
     border: 0.5px solid gray;
-    padding: 2%;
+    padding: 1% 0.5%;
     border-radius: 5px;
     gap: 30px;
-    width: 30%;
+    width: 25%;
     cursor: pointer;
     display: block;
 }
@@ -534,7 +534,9 @@ img {
 
 .chef {
     display: flex;
-    /* gap: 30px; */
+    padding: 0% 6%;
+    gap: 5%;
+    margin: 4% 0%;
 }
 
 .chef-Section-pic-div {
@@ -2098,4 +2100,92 @@ img {
 }
 .contact-us{
     border-top: 1px solid rgb(205, 198, 198);
+}
+/* =================================================================== */
+/* =================================================================== */
+/* =================================================================== */
+.myCart{
+    position: fixed;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 500;
+    display: flex;
+}
+.myCart1{
+    display: none;
+}
+.myCart-div1{
+    background-color: white;
+    width: 35%;
+
+}
+.foggyview{
+    background-color: #2d2c2a;
+    opacity: 0.7;
+    /* padding: 5%; */
+    width: 65%;
+    
+}
+.myCart-div1-para1{
+    display: flex;
+    justify-content: space-between;
+    padding: 6%;
+    border-bottom: 1px solid rgb(188, 186, 186);
+}
+.myCart-div1-para2{
+    font-size: 30px;
+    font-weight: 800;
+}
+.myCart-div1-para3{
+    font-size: 10px;
+    font-weight: 500;
+}
+.myCart-div1-para4{
+    color: red;
+}
+.myCart-div1-para5{
+    border: 1px solid rgb(203, 194, 194);
+    width: fit-content;
+    height: fit-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2%;
+    cursor: pointer;
+    border-radius: 50px;
+}
+.myCart-div1-para6{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+   height: 50%;
+}
+.myCart-div1-para7{
+    font-family: Georgia, "Times New Roman", serif;
+  font-style: italic;
+  font-weight: 400;
+  color: #d83a26;
+  font-size: 40px;
+}
+.myCart-div1-para8{
+    font-weight: 600;
+    font-size: 18px;
+    padding: 2% 0%;
+}
+.myCart-div1-para9{
+    color: #6e6a61;
+    width: 60%;
+    text-align: center;
+}
+.myCart-div1-btn{
+    background-color: red;
+    color: white;
+    padding: 2.5% 5%;
+    border-radius: 7px;
+    border: none;
+    font-weight: 600;
+    cursor: pointer;
+    margin-top: 3%;
 }

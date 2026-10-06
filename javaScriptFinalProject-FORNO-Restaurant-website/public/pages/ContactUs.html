@@ -11,6 +11,36 @@
 <body>
     <!-- ! this is the header -->
     <header>
+    <!-- !!!! cart card -->
+    <div class="myCart1">
+      <div class="myCart">
+        <div class="foggyview"></div>
+        <div class="myCart-div1">
+          <div class="myCart-div1-para1">
+            <div>
+              <p class="myCart-div1-para3">UNE ENVIE PREND FORME</p>
+              <p class="myCart-div1-para2">Mon panier<span class="myCart-div1-para4">.</span></p>
+            </div>
+            <p class="myCart-div1-para5" id="exitBTN"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em"
+                viewBox="0 0 24 24">
+                <path d="M0 0h24v24H0z" fill="none" />
+                <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-width="2"
+                  d="M20 20L4 4m16 0L4 20" />
+              </svg>
+            </p>
+          </div>
+          <div class="myCart-div1-para6">
+            <p class="myCart-div1-para7">Une part ?</p>
+            <p class="myCart-div1-para8">Votre panier attend sa pizza.</p>
+            <p class="myCart-div1-para9">Choisissez votre recette et laissez la
+              gourmandise faire le reste.</p>
+            <button class="myCart-div1-btn" id="myCart-div1BTN" > <a style="text-decoration: none; color: white;" href="/homePage.html#laCartDesEnvies">Decouvrir la carte</a></button>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
     <div class="header">
       <div class="header-title-div">
         <h1 class="header-title">forno<span class="header-title-point">.</span></h1>
@@ -25,19 +55,19 @@
             </svg>
           </span> <span class="button-navBar-span">0</span></button>
         <ul class="header-navBar-list">
-          <li class="navBar-lists"><a class="header-navBar-links" href="/homePage.html">Accueil</a></li>
-          <li class="navBar-lists"><a class="header-navBar-links" href="">Notre carte</a></li>
+          <li class="navBar-lists"><a class="header-navBar-links" href="homePage.html">Accueil</a></li>
+          <li class="navBar-lists"><a class="header-navBar-links" id="notreCart" href="/homePage.html#laCartDesEnvies">Notre carte</a></li>
           <li class="navBar-lists"><a class="header-navBar-links" href="/public/pages/AboutUs.html">À propos</a></li>
           <li class="navBar-lists"><a class="header-navBar-links" href="/public/pages/ContactUs.html">contact</a></li>
         </ul>
-        <button class="header-navBar-btn" type="submit"><span class="cart-icon"><svg xmlns="http://www.w3.org/2000/svg"
-              width="1em" height="1em" viewBox="0 0 24 24">
+        <button class="header-navBar-btn" id="header-navBarBTN" type="submit"><span class="cart-icon"><svg
+              xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24">
               <path d="M0 0h24v24H0z" fill="none" />
               <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                 d="M9 10V6a3 3 0 0 1 3-3v0a3 3 0 0 1 3 3v4m3-2l.917 11.923A1 1 0 0 1 17.92 21H6.08a1 1 0 0 1-.997-1.077L6 8z" />
             </svg>
           </span> Mon panier <span class="button-navBar-span">0</span></button>
-        <p class="header-burger-menu2"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em"
+        <p class="header-burger-menu1"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em"
             viewBox="0 0 24 24">
             <path d="M0 0h24v24H0z" fill="none" />
             <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
@@ -46,8 +76,8 @@
         </p>
       </nav>
     </div>
-    <div class="burger1">
-      <div class="header-navBar-list23">
+    <div class="burger">
+      <div class="header-navBar-list2">
         <ul class="header-navBar-list33">
           <li class="navBar-lists"><a class="header-navBar-links" href="homePage.html">Accueil</a></li>
           <li class="navBar-lists"><a class="header-navBar-links" href="">Notre carte</a></li>
@@ -56,6 +86,7 @@
         </ul>
       </div>
     </div>
+
   </header>
     <!-- ! this is the main -->
     <main>
@@ -226,7 +257,7 @@
             <p class="bfoter-second-div-para1">Commandes et messages de démonstration.</p>
         </div>
     </footer>
-    <script src="/contact.js"></script>
+    <script src="/public/pages/contact.js "></script>
 </body>
 
 </html>
