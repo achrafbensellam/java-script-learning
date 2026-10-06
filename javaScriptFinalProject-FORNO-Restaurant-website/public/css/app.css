@@ -1,114 +1,138 @@
 /** ============================ start besmillah ================================*/
 
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+
 :root {
-  --paper: #f5f1e9;
-  --surface: #fffaf1;
-  --ink: #25241f;
-  --muted: #6e6a61;
-  --red: #d83a26;
-  --red-dark: #a62a1b;
-  --line: #dcd6cb;
-}
-body {
-  font-family: Arial, Helvetica, sans-serif;
-  color: var(--ink);
-  background-color: var(--paper);
-}
-h1, h2, h3 {
-  font-weight: 800;
-}
-em {
-  font-family: Georgia, "Times New Roman", serif;
-  font-style: italic;
-  font-weight: 400;
+    --paper: #f5f1e9;
+    --surface: #fffaf1;
+    --ink: #25241f;
+    --muted: #6e6a61;
+    --red: #d83a26;
+    --red-dark: #a62a1b;
+    --line: #dcd6cb;
 }
 
-button, input, textarea {
-  font: inherit;
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: var(--ink);
+    background-color: var(--paper);
+}
+
+h1,
+h2,
+h3 {
+    font-weight: 800;
+}
+
+em {
+    font-family: Georgia, "Times New Roman", serif;
+    font-style: italic;
+    font-weight: 400;
+}
+
+button,
+input,
+textarea {
+    font: inherit;
 }
 
 img {
-  max-width: 100%;
-  height: auto;
+    max-width: 100%;
+    height: auto;
 }
+
 /* ! header style */
-.header{
+.header {
     display: flex;
     justify-content: space-between;
     padding: 1% 6%;
     border-bottom: 0.5px solid rgb(190, 189, 189);
 }
-.header-title-point{
+
+.header-title-point {
     color: red;
 }
-.header-title-underPara{
+
+.header-title-underPara {
     font-size: 10px;
 }
-.header-navBar{
+
+.header-navBar {
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 60px;
     width: 50%;
 }
-.header-navBar-list{
+
+.header-navBar-list {
     display: flex;
     list-style: none;
     gap: 30px;
 }
-.header-navBar-links{
+
+.header-navBar-links {
     text-decoration: none;
     color: black;
 }
-.header-navBar-links:focus{
+
+.header-navBar-links:focus {
     color: red;
 }
-.navBar-lists{
+
+.navBar-lists {
     font-weight: 550;
 }
-.header-navBar-btn{
+
+.header-navBar-btn {
     border: none;
-    border:0.5px solid gray;
+    border: 0.5px solid gray;
     padding: 2%;
     border-radius: 5px;
     gap: 30px;
     width: 30%;
     cursor: pointer;
 }
-.cart-icon{
+
+.cart-icon {
     margin-right: 2%;
     font-size: 20px;
 }
-.button-navBar-span{
+
+.button-navBar-span {
     background-color: red;
     color: white;
     padding: 2% 4.5%;
     margin-left: 2%;
     border-radius: 50%;
 }
+
 /* todo home page hero section  */
-.home-page-hero-section{
+.home-page-hero-section {
     display: flex;
     padding: 0% 6%;
     margin: 6% 0%;
 }
-.home-page-hero-pic{
+
+.home-page-hero-pic {
     transform: scale(1.03);
 }
-.hero-section-info{
+
+.hero-section-info {
     width: 50%;
 }
-.hero-section-picture{
-    width: 50%; 
+
+.hero-section-picture {
+    width: 50%;
     position: relative;
     overflow: hidden;
 }
-.hero-sec-pic-para1{
+
+.hero-sec-pic-para1 {
     position: absolute;
     top: 40px;
     right: 0;
@@ -119,72 +143,82 @@ img {
     border-radius: 3px;
 
 }
-.hero-sec-pic-para2{
+
+.hero-sec-pic-para2 {
     position: absolute;
-    bottom:60px;
+    bottom: 60px;
     left: 2px;
     background-color: red;
     border: 10px solid white;
     outline: 1px red solid;
-    border-radius:100px;
+    border-radius: 100px;
     padding: 5% 2.5%;
     color: white;
     text-align: center;
     transform: rotate(-15deg);
 
-    
+
 }
-.hero-sec-pic-para3{
- font-weight: 500;
+
+.hero-sec-pic-para3 {
+    font-weight: 500;
     font-size: 60px;
     /* width: 60%; */
     /* color: red; */
     font-family: Georgia, "Times New Roman", serif;
-  font-style: italic;
+    font-style: italic;
 }
-.hero-sec-pic-para4{
+
+.hero-sec-pic-para4 {
     position: absolute;
     bottom: 0;
     right: 0;
     color: gray;
 
 }
-.hero-section-info-para{
+
+.hero-section-info-para {
     font-weight: 600;
 }
-.hero-section-info-para1{
+
+.hero-section-info-para1 {
     color: red;
     font-size: 80px;
     position: relative;
     top: -20px;
     margin-right: 2%;
 }
-.hero-section-info-para2{
+
+.hero-section-info-para2 {
     font-weight: 900;
     font-size: 100px;
     /* width: 60%;   */
 }
-.hero-section-info-para3{
+
+.hero-section-info-para3 {
     font-weight: 900;
     font-size: 100px;
     /* width: 60%; */
 }
-.hero-section-info-para4{
+
+.hero-section-info-para4 {
     font-weight: 500;
     font-size: 100px;
     /* width: 60%; */
     color: red;
     font-family: Georgia, "Times New Roman", serif;
-  font-style: italic;
+    font-style: italic;
 }
-.hero-section-info-para5{
+
+.hero-section-info-para5 {
     font-weight: 500;
     font-size: 20px;
     color: rgb(133, 127, 127);
     width: 70%;
-    margin:4% 0%;
+    margin: 4% 0%;
 }
-.hero-section-info-btn{
+
+.hero-section-info-btn {
     background-color: red;
     color: white;
     padding: 2.5% 7%;
@@ -194,25 +228,29 @@ img {
     cursor: pointer;
 
 }
-.hero-section-info-para6{
+
+.hero-section-info-para6 {
     display: flex;
     align-items: center;
-    gap:10px ;
+    gap: 10px;
     margin-top: 4%;
 }
-.hero-section-info-para7{
+
+.hero-section-info-para7 {
     border: 1px solid rgb(175, 168, 168);
     border-radius: 50%;
-    padding:  1.5% 2%;
+    padding: 1.5% 2%;
     color: gray;
 }
-.hero-section-info-para8{
+
+.hero-section-info-para8 {
     width: 29.35%;
     /* font-size: 15px; */
     color: gray;
 }
+
 /* todo second section */
-.second-section{
+.second-section {
     padding: 2% 6%;
     display: flex;
     justify-content: space-between;
@@ -220,20 +258,24 @@ img {
     border-top: 1px solid rgb(190, 189, 189);
     border-bottom: 1px solid rgb(190, 189, 189);
 }
-.second-section-para1-nums{
+
+.second-section-para1-nums {
     color: red;
     margin-right: 20px;
 }
+
 /* todo pizza cards section  */
-.pizzas-crds-section{
-    padding:5% 6%;
+.pizzas-crds-section {
+    padding: 5% 6%;
 }
-.cards-div{
+
+.cards-div {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 3%;
 }
-.Margherita-card{
+
+.Margherita-card {
     background-color: rgb(240, 234, 222);
     /* height: 500px; */
     border: 1px solid rgb(220, 213, 213);
@@ -241,12 +283,14 @@ img {
     overflow: hidden;
 
 }
-.Margherita-pic{
+
+.Margherita-pic {
     position: relative;
     background-color: rgb(230, 218, 200);
     margin: 0% 6%;
 }
-.ORIGINALE{
+
+.ORIGINALE {
     position: absolute;
     top: 10px;
     background-color: white;
@@ -257,45 +301,53 @@ img {
     border-radius: 3px;
     left: -10px;
 }
-.pizzaNum{
-     position: absolute;
+
+.pizzaNum {
+    position: absolute;
     bottom: 15px;
     right: -17px;
     font-size: 15px;
     color: gray;
 }
-.Margherita-card-info{
+
+.Margherita-card-info {
     background-color: white;
     line-height: 2rem;
     padding: 0% 6%;
 }
-.pizzas-crds-section-para1{
+
+.pizzas-crds-section-para1 {
     color: red;
     font-weight: 600;
     font-size: 15px;
 }
-.pizzas-crds-section-para2{
+
+.pizzas-crds-section-para2 {
     display: flex;
     justify-content: space-between;
 }
-.pizzas-crds-section-para3{
+
+.pizzas-crds-section-para3 {
     font-weight: 800;
     font-size: 50px;
 }
-.pizzas-crds-section-para4{
+
+.pizzas-crds-section-para4 {
     color: red;
     font-family: Georgia, "Times New Roman", serif;
-  font-style: italic;
-  font-weight: 500;
+    font-style: italic;
+    font-weight: 500;
 }
-.pizzas-crds-section-para5{
+
+.pizzas-crds-section-para5 {
     display: flex;
     width: 100%;
     gap: 1%;
     align-items: center;
 
 }
-.pizzas-crds-section-input{
+
+.pizzas-crds-section-input {
     width: 70%;
     height: 50px;
     display: flex;
@@ -305,46 +357,54 @@ img {
     border-radius: 5px;
     margin: 2% 0%;
 }
-.pizzas-crds-section-input1{
+
+.pizzas-crds-section-input1 {
     width: 100%;
     border: none;
     outline: none;
     margin-left: 1%;
 }
-.pizzas-crds-section-input2{
+
+.pizzas-crds-section-input2 {
     width: 30%;
     border-radius: 5px;
     height: 50px;
-   
+
     border: 1px solid rgb(208, 207, 207);
 }
-.pizzas-crds-section-icon{
+
+.pizzas-crds-section-icon {
     font-size: 25px;
     position: relative;
     top: 10px;
     color: gray;
 }
-.Margherita-card-info-para1{
+
+.Margherita-card-info-para1 {
     color: gray;
     font-weight: 550;
     font-size: 15px;
 }
-.Margherita-card-info-para2{
+
+.Margherita-card-info-para2 {
     font-weight: 800;
     font-size: 25px;
 }
-.Margherita-card-info-para4{
+
+.Margherita-card-info-para4 {
     display: flex;
     justify-content: space-between;
     /* margin: 6% 0%; */
     padding: 7% 0%;
 
 }
-.Margherita-card-info-para5{
+
+.Margherita-card-info-para5 {
     font-weight: 800;
     font-size: 25px;
 }
-.Margherita-card-info-btn{
+
+.Margherita-card-info-btn {
     background-color: red;
     color: white;
     font-weight: 600;
@@ -353,40 +413,48 @@ img {
     border-radius: 5px;
     border: none;
 }
+
 /* todo  fourth section */
-.fourth-section{
+.fourth-section {
     background-color: rgb(216, 58, 38);
     color: white;
     display: flex;
     padding: 3% 6%;
 }
-.fourth-section-div1{
+
+.fourth-section-div1 {
     width: 50%;
 }
-.fourth-section-div2{
+
+.fourth-section-div2 {
     width: 34%;
     line-height: 1.5rem;
 }
-.fourth-section-div1-para1{
+
+.fourth-section-div1-para1 {
     font-weight: 600;
     font-size: 14px;
 }
-.fourth-section-div1-para2{
+
+.fourth-section-div1-para2 {
     font-weight: 800;
     font-size: 50px;
 }
-.fourth-section-div1-para3{
+
+.fourth-section-div1-para3 {
     font-weight: 800;
     font-size: 50px;
 }
-.fourth-section-div1-para4{
-     font-family: Georgia, "Times New Roman", serif;
-  font-style: italic;
-  font-weight: 400;
-  color: rgb(252, 213, 174);
+
+.fourth-section-div1-para4 {
+    font-family: Georgia, "Times New Roman", serif;
+    font-style: italic;
+    font-weight: 400;
+    color: rgb(252, 213, 174);
 
 }
-.fourth-section-div2-btn{
+
+.fourth-section-div2-btn {
     color: #a62a1b;
     font-weight: 600;
     padding: 3%;
@@ -394,18 +462,23 @@ img {
     border-radius: 5px;
     cursor: pointer;
 }
-/* todo fifth section */;
-.chef{
+
+/* todo fifth section */
+;
+
+.chef {
     display: flex;
     /* gap: 30px; */
 }
-.chef-Section-pic-div{
+
+.chef-Section-pic-div {
     position: relative;
     width: 50%;
     border-radius: 10px;
     overflow: hidden;
 }
-.chef-Section-pic-div-para{
+
+.chef-Section-pic-div-para {
     position: absolute;
     bottom: 0;
     left: 35px;
@@ -418,36 +491,43 @@ img {
     font-size: 13px;
 
 }
-.chef-Section-pic-div-pic{
+
+.chef-Section-pic-div-pic {
     transform: scale(1.1);
     height: 100%;
 }
-.chef-Section-info-div{
+
+.chef-Section-info-div {
     width: 50%;
 }
-.chef-Section-info-div-para1{
+
+.chef-Section-info-div-para1 {
     font-weight: 600;
     color: red;
     margin-bottom: 1.5%;
 }
-.chef-Section-info-div-para2{
+
+.chef-Section-info-div-para2 {
     font-weight: 800;
     font-size: 45px;
 }
-.chef-Section-info-div-para3{
+
+.chef-Section-info-div-para3 {
     font-family: Georgia, "Times New Roman", serif;
-  font-style: italic;
-  font-weight: 400;
-  color: red;
+    font-style: italic;
+    font-weight: 400;
+    color: red;
 }
-.chef-Section-info-div-para4{
+
+.chef-Section-info-div-para4 {
     color: gray;
     font-size: 17px;
     width: 100%;
     line-height: 2rem;
     margin-top: 2%;
 }
-.chef-Section-info-div-para5{
+
+.chef-Section-info-div-para5 {
     font-weight: 600;
     font-size: 20px;
     border-top: 1px solid rgb(178, 173, 173);
@@ -455,261 +535,310 @@ img {
     padding-top: 3%;
     margin-bottom: 1.5%;
 }
-.chef-Section-info-div-para6{
+
+.chef-Section-info-div-para6 {
     color: red;
     font-weight: 600;
     font-size: 17px;
     margin-right: 4%;
 }
-.chef-Section-info-div-para7{
+
+.chef-Section-info-div-para7 {
     color: gray;
     margin-left: 7%;
 }
-.chef-Section-info-div-para8{
+
+.chef-Section-info-div-para8 {
     color: #a62a1b;
     font-weight: 600;
 }
-.chef-Section-info-div-para9{
+
+.chef-Section-info-div-para9 {
     margin-top: 6%;
 }
+
 /* todo stor branches section */
-.stor-branches-section-info{
-display: flex;
-justify-content: space-between;
+.stor-branches-section-info {
+    display: flex;
+    justify-content: space-between;
 }
-.stor-branches-section-info-para1{
+
+.stor-branches-section-info-para1 {
     color: rgb(245, 161, 131);
     font-weight: 600;
     font-size: 16.5px;
 
 }
-.stor-branches-section-info-para2{
+
+.stor-branches-section-info-para2 {
     font-weight: 800;
     font-size: 45px;
 }
-.stor-branches-div{
+
+.stor-branches-div {
     display: flex;
     margin-top: 3%;
     gap: 2%;
-    
+
 }
-.stor-branches-section{
+
+.stor-branches-section {
     background-color: rgb(37, 36, 31);
     color: white;
     padding: 4% 6%;
 }
-.stor-branches-section-info-para3{
+
+.stor-branches-section-info-para3 {
     position: relative;
     width: 22%;
-    
+
 }
-.stor-branches-section-info-para4{
+
+.stor-branches-section-info-para4 {
     position: absolute;
     bottom: 0;
     width: 100%;
     line-height: 1.5rem;
-    color:rgb(169, 157, 134) ;
+    color: rgb(169, 157, 134);
 
 }
-.stor-branches-section-info-para5{
+
+.stor-branches-section-info-para5 {
     font-family: Georgia, "Times New Roman", serif;
     font-style: italic;
     font-weight: 400;
     color: rgb(245, 161, 131);
-    
+
 }
-.stor-branches-div-card{
+
+.stor-branches-div-card {
     border-top: 1px solid gray;
     padding-top: 1.5%;
     width: 100%;
 }
-.stor-branches-div-card-para1{
-    color:rgb(169, 157, 134) ;
+
+.stor-branches-div-card-para1 {
+    color: rgb(169, 157, 134);
     padding: 6% 0%;
 }
-.stor-branches-div-card-para2{    
+
+.stor-branches-div-card-para2 {
     color: rgb(245, 161, 131);
     font-weight: 600;
 
 }
-.stor-branches-div-card-para3{    
+
+.stor-branches-div-card-para3 {
     font-weight: 600;
     font-size: 27px;
     padding: 2% 0%;
 }
-.stor-branches-div-card-para4{    
-    color:rgb(150, 142, 128) ;
+
+.stor-branches-div-card-para4 {
+    color: rgb(150, 142, 128);
     line-height: 1.5rem;
     padding: 8% 0%;
     /* color: gray; */
 
 }
-.stor-branches-div-card-para6{    
-color: white;
-font-weight: 600;
+
+.stor-branches-div-card-para6 {
+    color: white;
+    font-weight: 600;
 }
+
 /* todo section befor footer */
-.section-befor-footer{
+.section-befor-footer {
     display: flex;
     justify-content: space-between;
     padding: 3% 6%;
     border-bottom: 1px solid rgb(220, 209, 209);
     align-items: center;
 }
-.section-befor-footer-para1{
+
+.section-befor-footer-para1 {
     font-weight: 800;
     font-size: 25px;
     width: 18%;
 }
-.section-befor-footer-para2{
+
+.section-befor-footer-para2 {
     font-weight: 800;
     font-size: 25px;
     font-family: Georgia, "Times New Roman", serif;
-  font-style: italic;
-  font-weight: 400;
+    font-style: italic;
+    font-weight: 400;
     color: rgb(215, 54, 34);
 
 }
-.section-befor-footer-btn{
+
+.section-befor-footer-btn {
     padding: 1% 2%;
     border-radius: 10px;
     border: 2px solid black;
     font-weight: 600;
     cursor: pointer;
 }
+
 /* ! this is the footer */
-.the-footer{
+.the-footer {
     padding: 3% 6%;
 }
-.foter-first-div{
+
+.foter-first-div {
     display: flex;
     justify-content: space-between;
 }
-.foter-first-div-para1{
-   color: rgb(113, 110, 110);
-   margin-top: 2%;
+
+.foter-first-div-para1 {
+    color: rgb(113, 110, 110);
+    margin-top: 2%;
 }
-.foter-first-div-para2{
-   list-style: none;
+
+.foter-first-div-para2 {
+    list-style: none;
 }
-.foter-first-div-para3{
+
+.foter-first-div-para3 {
     text-decoration: none;
     color: gray;
 }
-.foter-first-div-para4{
+
+.foter-first-div-para4 {
     font-weight: 600;
 }
-.foter-first-div-para5{
+
+.foter-first-div-para5 {
     line-height: 2rem;
     width: 100%;
 }
-.foter-first-div-para6{
+
+.foter-first-div-para6 {
     width: 100%;
     line-height: 1.5rem;
 }
-.foter-first-div-para7{
+
+.foter-first-div-para7 {
     font-weight: 600;
 }
-.foter-first-div-para8{
-   width: 80%;
-   color: gray;
-   padding: 4% 0%;
+
+.foter-first-div-para8 {
+    width: 80%;
+    color: gray;
+    padding: 4% 0%;
 }
-.foter-first-div-para10{
-color: red;
-font-weight: 600;
+
+.foter-first-div-para10 {
+    color: red;
+    font-weight: 600;
 }
-.foter-first-div-para11{
+
+.foter-first-div-para11 {
     width: 100%;
 }
-.bfoter-second-div{
+
+.bfoter-second-div {
     display: flex;
     justify-content: space-between;
     padding-top: 2.5%;
     border-top: 1px solid rgb(208, 201, 201);
     margin-top: 4%;
 }
-.bfoter-second-div-para1{
+
+.bfoter-second-div-para1 {
     color: gray;
 }
+
 /*!========================================================= */
 /*!========================================================= */
 /*!========================================================= */
 /* !============ ABOUT US PAGE STARTS FROM HERE =============*/
 /* todo about us hero section */
-.about-us-hero-section{
-    padding: 4% 6%
-    0% 6%;
+.about-us-hero-section {
+    padding: 4% 6% 0% 6%;
 
 }
-.about-us-hero-section-para1{
+
+.about-us-hero-section-para1 {
     font-weight: 600;
     font-size: 14px;
     color: red;
 }
-.about-us-hero-section-para2{
+
+.about-us-hero-section-para2 {
     font-weight: 800;
     font-size: 64px;
 }
-.about-us-hero-section-para3{
-color: gray;
-width: 40%;
-line-height: 1.5rem;
+
+.about-us-hero-section-para3 {
+    color: gray;
+    width: 40%;
+    line-height: 1.5rem;
 }
-.about-us-hero-section-para4{
-font-family: Georgia, "Times New Roman", serif;
-  font-style: italic;
-  font-weight: 400;
-      color: rgb(245, 161, 131);
-      color: #d83a26;
+
+.about-us-hero-section-para4 {
+    font-family: Georgia, "Times New Roman", serif;
+    font-style: italic;
+    font-weight: 400;
+    color: rgb(245, 161, 131);
+    color: #d83a26;
 }
+
 /* todo about us second section */
-.about-us-second-section{
-    margin:6%;
+.about-us-second-section {
+    margin: 6%;
     padding: 4% 0%;
     display: flex;
-   border-top: 1px solid rgb(204, 199, 199);
+    border-top: 1px solid rgb(204, 199, 199);
     justify-content: space-between;
 }
-.about-us-second-section-div1{    
-width: 40%;
-height:430px;
+
+.about-us-second-section-div1 {
+    width: 40%;
+    height: 430px;
     position: relative;
 
 }
-.about-us-second-section-div2{    
-width: 50%;
-height:50%;
+
+.about-us-second-section-div2 {
+    width: 50%;
+    height: 50%;
 }
-.about-us-second-section-div2-para1{
+
+.about-us-second-section-div2-para1 {
     color: red;
     font-weight: 600;
 
 }
-.about-us-second-section-div2-para2{
+
+.about-us-second-section-div2-para2 {
     font-weight: 800;
     font-size: 40px;
     width: 70%;
     padding: 2% 0%;
 }
-.about-us-second-section-div2-para3{
+
+.about-us-second-section-div2-para3 {
     font-family: Georgia, "Times New Roman", serif;
-  font-style: italic;
-  font-weight: 400;
-      color: #d83a26;
+    font-style: italic;
+    font-weight: 400;
+    color: #d83a26;
 
 }
-.about-us-second-section-div2-para4{
-color: gray;
-width: 80%;
+
+.about-us-second-section-div2-para4 {
+    color: gray;
+    width: 80%;
 
 }
-.about-us-second-section-div2-para5{
-color: gray;
-width: 83%;
-padding: 4% 0%;
+
+.about-us-second-section-div2-para5 {
+    color: gray;
+    width: 83%;
+    padding: 4% 0%;
 }
-.about-us-second-section-div2-btn{
+
+.about-us-second-section-div2-btn {
     background-color: red;
     color: white;
     padding: 2.5% 7%;
@@ -718,11 +847,13 @@ padding: 4% 0%;
     font-weight: 600;
     cursor: pointer;
 }
-.about-us-second-section-div1-pic{
+
+.about-us-second-section-div1-pic {
     width: 100%;
     height: 100%;
 }
-.about-us-second-section-div1-para-pic{
+
+.about-us-second-section-div1-para-pic {
     position: absolute;
     bottom: 30px;
     left: 0;
@@ -731,79 +862,259 @@ padding: 4% 0%;
     padding: 0.5%;
     font-size: 13px;
 }
+
 /* todo about us ingrediant section */
-.about-us-ingrediant-section{
+.about-us-ingrediant-section {
     padding: 4% 6%;
 
 }
-.about-us-ingrediant-section-para1{
+
+.about-us-ingrediant-section-para1 {
     font-weight: 600;
     font-size: 15px;
     color: #d83a26;
 }
-.about-us-ingrediant-section-para2{
+
+.about-us-ingrediant-section-para2 {
     font-weight: 800;
     font-size: 45px;
 }
-.about-us-ingrediant-section-para3{
+
+.about-us-ingrediant-section-para3 {
     font-family: Georgia, "Times New Roman", serif;
-  font-style: italic;
-  font-weight: 400;
-      color: #d83a26;
+    font-style: italic;
+    font-weight: 400;
+    color: #d83a26;
 
 }
-.about-us-ingrediant-section-para4{
+
+.about-us-ingrediant-section-para4 {
     display: flex;
     justify-content: space-between;
-  padding: 2% 0%;
+    padding: 2% 0%;
 
 
 }
-.about-us-ingrediant-section-para5{
+
+.about-us-ingrediant-section-para5 {
     border-top: 1px solid rgb(182, 176, 176);
     width: 28%;
 }
-.about-us-ingrediant-section-para6{
+
+.about-us-ingrediant-section-para6 {
     color: #d83a26;
     font-weight: 600;
     padding: 3% 0%;
 }
-.about-us-ingrediant-section-para7{
+
+.about-us-ingrediant-section-para7 {
     font-weight: 600;
     font-size: 25px;
 }
-.about-us-ingrediant-section-para8{
+
+.about-us-ingrediant-section-para8 {
     color: gray;
     padding-top: 3%;
 }
-.about-us-ingrediant-section-para9{
-background-color: rgb(235, 228, 215);
-display: flex;
-flex-direction: column;
-padding: 4% 0%;
-align-items: center;
+
+.about-us-ingrediant-section-para9 {
+    background-color: rgb(235, 228, 215);
+    display: flex;
+    flex-direction: column;
+    padding: 4% 0%;
+    align-items: center;
 }
-.about-us-ingrediant-section-para10{
-width: 40%;
-font-weight: 800;
-font-size: 40px;
+
+.about-us-ingrediant-section-para10 {
+    width: 40%;
+    font-weight: 800;
+    font-size: 40px;
 }
-.about-us-ingrediant-section-para11{
-color: gray;
-padding: 2% 0%;
+
+.about-us-ingrediant-section-para11 {
+    color: gray;
+    padding: 2% 0%;
 }
-.about-us-ingrediant-section-para12{
-font-family: Georgia, "Times New Roman", serif;
-  font-style: italic;
-  font-weight: 400;
-  color: #d83a26;
+
+.about-us-ingrediant-section-para12 {
+    font-family: Georgia, "Times New Roman", serif;
+    font-style: italic;
+    font-weight: 400;
+    color: #d83a26;
 }
-.chef1{
+
+.chef1 {
     display: flex;
     padding: 0% 6%;
     gap: 5%;
     margin: 4% 0%;
 }
-.about-us{
+
+.about-us {
     width: 80%;
+}
+
+/*!========================================================= */
+/*!========================================================= */
+/*!========================================================= */
+/*!=========== CONTACT US PAGE STARTS FROM HERE =============*/
+.form-section {
+    border-top: 1px solid rgb(180, 176, 176);
+    margin: 4% 6%;
+    display: flex;
+    padding: 3% 0%;
+    gap: 3%;
+}
+
+.form-section-info {
+    width: 40%;
+    background-color: #d83a26;
+    padding: 2%;
+    border-radius: 12px;
+    height: fit-content;
+}
+
+.form-section-info-para1 {
+    color: rgb(255, 228, 187);
+    font-size: 11px;
+}
+
+.form-section-info-para2 {
+    font-weight: 600;
+    font-size: 35px;
+    color: white;
+    padding: 4% 0%;
+}
+
+.form-section-info-para3 {
+    font-family: Georgia, "Times New Roman", serif;
+    font-style: italic;
+    font-weight: 400;
+    color: rgb(255, 228, 187);
+
+}
+
+.form-section-info-para4 {
+    width: 90%;
+    color: white;
+    margin-bottom: 8%;
+}
+
+.form-section-info-para5 {
+    border-top: 1px solid rgba(219, 213, 213, 0.547);
+
+    padding: 4% 0%;
+    line-height: 1.5rem;
+}
+
+.form-section-info-para5:hover {
+    background-color: rgba(192, 179, 179, 0.174);
+}
+
+.form-section-info-para6 {
+    color: rgb(255, 228, 187);
+    font-weight: 500;
+    margin-right: 5%;
+}
+
+.form-section-info-para7 {
+    color: rgb(255, 228, 187);
+    font-weight: 500;
+    margin-left: 8.8%;
+}
+
+.form-section-info-para8 {
+    color: white;
+    font-weight: 600;
+}
+
+.form-section-info-para9 {
+    color: white;
+    width: 100%;
+    font-size: 13px;
+    border-top: 1px solid rgba(219, 213, 213, 0.547);
+    padding: 5% 0%;
+}
+
+.form {
+    width: 60%;
+    padding: 2%;
+    border-radius: 12px;
+    border: 1px solid rgb(178, 173, 173);
+}
+
+.form-para1 {
+    font-size: 35px;
+    font-weight: 600;
+}
+
+.form-para2 {
+    font-family: Georgia, "Times New Roman", serif;
+    font-style: italic;
+    font-weight: 400;
+    color: #d83a26;
+}
+
+.form-para3 {
+    color: gray;
+    /* height: 100px;
+    background-color: red; */
+}
+.form-para4{
+    display: flex;
+    gap: 2%;
+}
+.form-para5{
+    width: 50%;
+}
+.form-para6{
+    width: 100%;
+    padding: 4% 4%;
+    border: 1px solid rgb(184, 179, 179);
+    border-radius: 4px;
+    margin: 3% 0% 6% 0%;
+}
+.form-para7{
+    font-weight: 600;
+}
+.form-para8{
+    width: 100%;
+    padding: 2% 4%;
+    border: 1px solid rgb(184, 179, 179);
+    border-radius: 4px;
+    margin: 2% 0% 4% 0%;
+}
+.form-para-9{
+    border: 1px solid rgb(200, 189, 189);
+    border-radius: 4px;
+    padding: 2% 4%;
+    
+}
+.form-para10{
+    display: flex;
+    gap: 4%;
+}
+.form-para11{
+    margin: 2% 0% 2% 0%;
+    border: 1px solid rgb(200, 189, 189);
+    border-radius: 4px;
+    width: 100%;
+    padding: 2%;
+    height: 150px;
+}
+.form-para12{
+    color: gray;
+    font-size: 15px;
+}
+.form-btn{
+    background-color: red;
+    color: white;
+    padding: 2% 7%;
+    border-radius: 7px;
+    border: none;
+    font-weight: 600;
+    cursor: pointer;
+    margin-top: 3%;
+    width: 100%;
+
 }

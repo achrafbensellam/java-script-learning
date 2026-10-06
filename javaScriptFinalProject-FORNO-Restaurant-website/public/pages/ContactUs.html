@@ -1,34 +1,135 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/public/css/app.css">
     <title>contact us page</title>
 </head>
+
 <body>
     <!-- ! this is the header -->
-  <header class="header">
-    <div class="header-title-div">
-      <h1 class="header-title">forno<span class="header-title-point">.</span></h1>
-      <p class="header-title-underPara">PIZZA ARTISANALE</p>
-    </div>
-    <nav class="header-navBar">
-      <ul class="header-navBar-list">
-        <li class="navBar-lists"><a class="header-navBar-links" href="/homePage.html">Accueil</a></li>
-        <li class="navBar-lists"><a class="header-navBar-links" href="">Notre carte</a></li>
-        <li class="navBar-lists"><a class="header-navBar-links" href="/public/pages/AboutUs.html">À propos</a></li>
-        <li class="navBar-lists"><a class="header-navBar-links" href="/public/pages/ContactUs.html">contact</a></li>
-      </ul>
-      <button class="header-navBar-btn" type="submit"><span class="cart-icon"><svg xmlns="http://www.w3.org/2000/svg"
-            width="1em" height="1em" viewBox="0 0 24 24">
-            <path d="M0 0h24v24H0z" fill="none" />
-            <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-              d="M9 10V6a3 3 0 0 1 3-3v0a3 3 0 0 1 3 3v4m3-2l.917 11.923A1 1 0 0 1 17.92 21H6.08a1 1 0 0 1-.997-1.077L6 8z" />
-          </svg>
-        </span> Mon panier <span class="button-navBar-span">0</span></button>
-    </nav>
-  </header>
+    <header class="header">
+        <div class="header-title-div">
+            <h1 class="header-title">forno<span class="header-title-point">.</span></h1>
+            <p class="header-title-underPara">PIZZA ARTISANALE</p>
+        </div>
+        <nav class="header-navBar">
+            <ul class="header-navBar-list">
+                <li class="navBar-lists"><a class="header-navBar-links" href="/homePage.html">Accueil</a></li>
+                <li class="navBar-lists"><a class="header-navBar-links" href="">Notre carte</a></li>
+                <li class="navBar-lists"><a class="header-navBar-links" href="/public/pages/AboutUs.html">À propos</a>
+                </li>
+                <li class="navBar-lists"><a class="header-navBar-links" href="/public/pages/ContactUs.html">contact</a>
+                </li>
+            </ul>
+            <button class="header-navBar-btn" type="submit"><span class="cart-icon"><svg
+                        xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24">
+                        <path d="M0 0h24v24H0z" fill="none" />
+                        <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                            stroke-width="2"
+                            d="M9 10V6a3 3 0 0 1 3-3v0a3 3 0 0 1 3 3v4m3-2l.917 11.923A1 1 0 0 1 17.92 21H6.08a1 1 0 0 1-.997-1.077L6 8z" />
+                    </svg>
+                </span> Mon panier <span class="button-navBar-span">0</span></button>
+        </nav>
+    </header>
+    <!-- ! this is the main -->
+    <main>
+        <!-- todo about us hero section -->
+        <section class="about-us-hero-section">
+            <p class="about-us-hero-section-para1">ON GARDE LE CONTACT</p>
+            <p class="about-us-hero-section-para2">Une question ?</p>
+            <p class="about-us-hero-section-para2">Une grande <span class="about-us-hero-section-para4">tablée ?</span>
+            </p>
+            <p class="about-us-hero-section-para3">Choisissez votre maison et laissez-nous un mot. Pour une pizza, une
+                occasion
+                ou simplement pour dire bonjour.</p>
+        </section>
+        <!--  todo form section -->
+        <section class="form-section">
+            <div class="form-section-info">
+                <p class="form-section-info-para1">QUATRE HORIZONS, UNE MAISON</p>
+                <p class="form-section-info-para2">Parlons <span class="form-section-info-para3">pizza.</span> </p>
+                <p class="form-section-info-para4">Une réservation à préparer, un événement à imaginer ou
+                    une question sur la carte : tout commence par une
+                    conversation.</p>
+                <div class="form-section-info-para5">
+                    <p class="form-section-info-para8"><span class="form-section-info-para6">01</span>Casablanca</p>
+                    <p class="form-section-info-para7">Maroc</p>
+                </div>
+                <div class="form-section-info-para5">
+                    <p class="form-section-info-para8"><span class="form-section-info-para6">02</span>Belgique</p>
+                    <p class="form-section-info-para7">Europe</p>
+                </div>
+                <div class="form-section-info-para5">
+                    <p class="form-section-info-para8"><span class="form-section-info-para6">03</span>France</p>
+                    <p class="form-section-info-para7">Europe</p>
+                </div>
+                <div class="form-section-info-para5">
+                    <p class="form-section-info-para8"><span class="form-section-info-para6">04</span>Émirats arabes unis</p>
+                    <p class="form-section-info-para7">Moyen-Orient</p>
+                </div>
+                <p class="form-section-info-para9">Les détails pratiques d'une adresse se précisent avec la maison concernée.</p>
+            </div>
+            <form action="" class="form">
+                <label for="" class="form-para1">Un petit <span class="form-para2">mot.</span> </label>
+                <br><br>
+                <label for="" class="form-para3">Les champs marqués d'un astérisque sont obligatoires.</label>
+                <br><br>
+                <label for="" class="form-para4">
+                    <label for="" class="form-para5">
+                        <label for="" class="form-para7">Votre nom *</label>
+                        <br>
+                        <input class="form-para6" type="text" placeholder="Ex. Sara Amrani">
+                    </label>
+                    <label for="" class="form-para5">
+                        <label for="" class="form-para7">Votre e-mail *</label>
+                        <br>
+                        <input class="form-para6" type="email" placeholder="vous@exemple.com">
+                    </label>
+                </label>
+               
+                    <label for="" class="form-para7">Votre maison FORNO *</label>
+                    <br>
+                    <select name="" id="" class="form-para8">
+                        <option value="">select</option>
+                        <option>Casablanca</option>
+                        <option>Belgique</option>
+                        <option>France</option>
+                        <option>Émirats arabes unis</option>
+                    </select>
+                
+                    <label for="" class="form-para7">Votre sujet</label>
+                    <br><br>
+                    <label for="" class="form-para10">
+                        <label for="" class="form-para-9">
+                            <input type="radio">
+                            <label for="">Une question</label>
+                        </label>
+                        <label for="" class="form-para-9">
+                            <input type="radio">
+                            <label for="">Réservation</label>
+                        </label>
+                        <label for=""class="form-para-9">
+                            <input type="radio">
+                            <label for="">Événement</label>
+                        </label>
+                        
+                    </label>
+                    <br>
+                
+                <label for="" class="form-para7">Votre message *</label>
+                <br>
+                <textarea class="form-para11" name="" id="" placeholder="Dites-nous ce que vous avez en tête ..."></textarea>
+                <br>
+                <label for="" class="form-para12">Mode démonstration ; aucun message n'est envoyé.</label>
+                <br>
+                <button class="form-btn" type="submit">Preparer mon message</button>
+            </form>
+        </section>
+    </main>
     <script src="/script.js"></script>
 </body>
+
 </html>
