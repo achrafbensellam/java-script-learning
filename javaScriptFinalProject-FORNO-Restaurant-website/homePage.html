@@ -11,26 +11,52 @@
 <body>
   <!--* ====================== start besmillah ======================= -->
   <!-- ! this is the header -->
-  <header class="header">
-    <div class="header-title-div">
-      <h1 class="header-title">forno<span class="header-title-point">.</span></h1>
-      <p class="header-title-underPara">PIZZA ARTISANALE</p>
-    </div>
-    <nav class="header-navBar">
-      <ul class="header-navBar-list">
-        <li class="navBar-lists"><a class="header-navBar-links" href="homePage.html">Accueil</a></li>
-        <li class="navBar-lists"><a class="header-navBar-links" href="">Notre carte</a></li>
-        <li class="navBar-lists"><a class="header-navBar-links" href="/public/pages/AboutUs.html">À propos</a></li>
-        <li class="navBar-lists"><a class="header-navBar-links" href="/public/pages/ContactUs.html">contact</a></li>
-      </ul>
-      <button class="header-navBar-btn" type="submit"><span class="cart-icon"><svg xmlns="http://www.w3.org/2000/svg"
-            width="1em" height="1em" viewBox="0 0 24 24">
+  <header>
+    <div class="header">
+      <div class="header-title-div">
+        <h1 class="header-title">forno<span class="header-title-point">.</span></h1>
+        <p class="header-title-underPara">PIZZA ARTISANALE</p>
+      </div>
+      <nav class="header-navBar">
+        <button class="header-navBar-btn2" type="submit"><span class="cart-icon"><svg xmlns="http://www.w3.org/2000/svg"
+              width="1em" height="1em" viewBox="0 0 24 24">
+              <path d="M0 0h24v24H0z" fill="none" />
+              <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M9 10V6a3 3 0 0 1 3-3v0a3 3 0 0 1 3 3v4m3-2l.917 11.923A1 1 0 0 1 17.92 21H6.08a1 1 0 0 1-.997-1.077L6 8z" />
+            </svg>
+          </span> <span class="button-navBar-span">0</span></button>
+        <ul class="header-navBar-list">
+          <li class="navBar-lists"><a class="header-navBar-links" href="homePage.html">Accueil</a></li>
+          <li class="navBar-lists"><a class="header-navBar-links" href="">Notre carte</a></li>
+          <li class="navBar-lists"><a class="header-navBar-links" href="/public/pages/AboutUs.html">À propos</a></li>
+          <li class="navBar-lists"><a class="header-navBar-links" href="/public/pages/ContactUs.html">contact</a></li>
+        </ul>
+        <button class="header-navBar-btn" type="submit"><span class="cart-icon"><svg xmlns="http://www.w3.org/2000/svg"
+              width="1em" height="1em" viewBox="0 0 24 24">
+              <path d="M0 0h24v24H0z" fill="none" />
+              <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M9 10V6a3 3 0 0 1 3-3v0a3 3 0 0 1 3 3v4m3-2l.917 11.923A1 1 0 0 1 17.92 21H6.08a1 1 0 0 1-.997-1.077L6 8z" />
+            </svg>
+          </span> Mon panier <span class="button-navBar-span">0</span></button>
+        <p class="header-burger-menu1"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em"
+            viewBox="0 0 24 24">
             <path d="M0 0h24v24H0z" fill="none" />
-            <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-              d="M9 10V6a3 3 0 0 1 3-3v0a3 3 0 0 1 3 3v4m3-2l.917 11.923A1 1 0 0 1 17.92 21H6.08a1 1 0 0 1-.997-1.077L6 8z" />
+            <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+              d="M3 6.001h18m-18 6h18m-18 6h18" />
           </svg>
-        </span> Mon panier <span class="button-navBar-span">0</span></button>
-    </nav>
+        </p>
+      </nav>
+    </div>
+    <div class="burger">
+      <div class="header-navBar-list2">
+        <ul class="header-navBar-list33">
+          <li class="navBar-lists"><a class="header-navBar-links" href="homePage.html">Accueil</a></li>
+          <li class="navBar-lists"><a class="header-navBar-links" href="">Notre carte</a></li>
+          <li class="navBar-lists"><a class="header-navBar-links" href="/public/pages/AboutUs.html">À propos</a></li>
+          <li class="navBar-lists"><a class="header-navBar-links" href="/public/pages/ContactUs.html">contact</a></li>
+        </ul>
+      </div>
+    </div>
   </header>
   <!-- ! this the main  -->
   <main class="the-main">
@@ -54,9 +80,9 @@
         <img class="home-page-hero-pic" src="public/images/hero-pizza-transparent.png" alt="">
         <p class="hero-sec-pic-para1">LA MARGHERITA . L'ORIGINALE</p>
         <div class="hero-sec-pic-para2">
-          <p style="font-weight:600 ;">LA BONNE</p>
+          <p class="labonne" style="font-weight:600 ;">LA BONNE</p>
           <p class="hero-sec-pic-para3">part.</p>
-          <p style="font-weight:600 ;">C'EST PAR ICI</p>
+          <p class="labonne2" style="font-weight:600 ;">C'EST PAR ICI</p>
         </div>
         <p class="hero-sec-pic-para4">01 / 06</p>
       </div>
@@ -64,9 +90,9 @@
     </section>
     <!-- todo second section -->
     <section class="second-section">
-      <p><span class="second-section-para1-nums">01</span> Une pate doree</p>
-      <p><span class="second-section-para1-nums">02</span> Des recettes généreuses</p>
-      <p><span class="second-section-para1-nums">03</span> A emporter ou a livrer</p>
+      <p class="fontsub"><span class="second-section-para1-nums">01</span> Une pate doree</p>
+      <p class="fontsub"><span class="second-section-para1-nums">02</span> Des recettes généreuses</p>
+      <p class="hide"><span class="second-section-para1-nums">03</span> A emporter ou a livrer</p>
     </section>
     <!-- todo third section -->
     <section class="pizzas-crds-section">
@@ -99,13 +125,16 @@
           <option>VÉGÉTARIENNES</option>
         </select>
       </div>
-      <p style="color: gray;margin-bottom: 2%;">6 pizzas a decouvrire</p>
+      <p class="sixPIzza" style="color: gray;margin-bottom: 2%;">6 pizzas a decouvrire</p>
       <!-- ? cards div   -->
       <div class="cards-div">
         <!-- ? Margherita card -->
         <div class="Margherita-card">
-          <div class="Margherita-pic">
-            <img src="public/images/margherita.png" alt="" width="100%">
+          <div class="image-div">
+            <div class="Margherita-pic">
+              <img class="Margherita-image" src="public/images/margherita.png" alt="" width="100%">
+            </div>
+            <!-- <img class="Margherita-image" src="public/images/margherita.png" alt="" width="100%"> -->
             <p class=" ORIGINALE">L'ORIGINALE</p>
             <p class="pizzaNum">01</p>
           </div>
@@ -121,8 +150,11 @@
         </div>
         <!-- ? diavola card -->
         <div class="Margherita-card">
-          <div class="Margherita-pic">
-            <img src="public/images/diavola.png" alt="" width="100%">
+          <div class="image-div">
+            <div class="Margherita-pic">
+              <img src="public/images/diavola.png" alt="" width="100%">
+            </div>
+
             <p class=" ORIGINALE">UN PEU DE CARACTERE</p>
             <p class="pizzaNum">02</p>
           </div>
@@ -138,8 +170,10 @@
         </div>
         <!-- ? pollo card -->
         <div class="Margherita-card">
-          <div class="Margherita-pic">
-            <img src="public/images/pollo.png" alt="" width="100%">
+          <div class="image-div">
+            <div class="Margherita-pic">
+              <img src="public/images/pollo.png" alt="" width="100%">
+            </div>
             <p class=" ORIGINALE">LA GENÉREUSE</p>
             <p class="pizzaNum">03</p>
           </div>
@@ -155,8 +189,11 @@
         </div>
         <!-- ? giardino card -->
         <div class="Margherita-card">
-          <div class="Margherita-pic">
-            <img src="public/images/giardino.png" alt="" width="100%">
+          <div class="image-div">
+            <div class="Margherita-pic">
+              <img src="public/images/giardino.png" alt="" width="100%">
+            </div>
+
             <p class=" ORIGINALE">TOUT EN COULEURS</p>
             <p class="pizzaNum">04</p>
           </div>
@@ -172,8 +209,11 @@
         </div>
         <!-- ? tonno card -->
         <div class="Margherita-card">
-          <div class="Margherita-pic">
-            <img src="public/images/tonno.png" alt="" width="100%">
+          <div class="image-div">
+            <div class="Margherita-pic">
+              <img src="public/images/tonno.png" alt="" width="100%">
+            </div>
+
             <p class=" ORIGINALE">L'AIR DU LARGE</p>
             <p class="pizzaNum">05</p>
           </div>
@@ -190,8 +230,11 @@
         </div>
         <!-- ? Quattro Formaggi card -->
         <div class="Margherita-card">
-          <div class="Margherita-pic">
-            <img src="public/images/quattro-formaggi.png" alt="" width="100%">
+          <div class="image-div">
+            <div class="Margherita-pic">
+
+              <img src="public/images/quattro-formaggi.png" alt="" width="100%">
+            </div>
             <p class=" ORIGINALE">POUR LES AMOUREUX</p>
             <p class="pizzaNum">06</p>
           </div>
@@ -259,7 +302,8 @@
         <div class="stor-branches-section-info">
           <div class="">
             <p class="stor-branches-section-info-para2">Quatre horizons.</p>
-            <p class="stor-branches-section-info-para2">La même <span class="stor-branches-section-info-para5">passion.</span></p>
+            <p class="stor-branches-section-info-para2">La même <span
+                class="stor-branches-section-info-para5">passion.</span></p>
           </div>
           <div class="stor-branches-section-info-para3">
             <p class="stor-branches-section-info-para4">Casablanca, Belgique, France, Émirats.
@@ -276,7 +320,8 @@
           <p class="stor-branches-div-card-para3">Casablanca</p>
           <p class="stor-branches-div-card-para4">Notre ancrage marocain, une table
             généreuse et une envie de partager.</p>
-          <p class="stor-branches-div-card-para5"><a class="stor-branches-div-card-para6" href="">Contacter cette maison</a></p>
+          <p class="stor-branches-div-card-para5"><a class="stor-branches-div-card-para6" href="">Contacter cette
+              maison</a></p>
         </div>
         <!-- ? -->
         <!-- ? -->
@@ -285,8 +330,9 @@
           <p class="stor-branches-div-card-para2">Europe</p>
           <p class="stor-branches-div-card-para3">Belgique</p>
           <p class="stor-branches-div-card-para4">La convivialité belge rencontre notre
-passion pour la pizza.</p>
-          <p class="stor-branches-div-card-para5"><a class="stor-branches-div-card-para6" href="">Contacter cette maison</a></p>
+            passion pour la pizza.</p>
+          <p class="stor-branches-div-card-para5"><a class="stor-branches-div-card-para6" href="">Contacter cette
+              maison</a></p>
         </div>
         <!-- ? -->
         <!-- ? -->
@@ -295,8 +341,9 @@ passion pour la pizza.</p>
           <p class="stor-branches-div-card-para2">Europe</p>
           <p class="stor-branches-div-card-para3">France</p>
           <p class="stor-branches-div-card-para4">Le plaisir des bonnes choses, autour
-d'une pizza bien faite.</p>
-          <p class="stor-branches-div-card-para5"><a class="stor-branches-div-card-para6" href="">Contacter cette maison</a></p>
+            d'une pizza bien faite.</p>
+          <p class="stor-branches-div-card-para5"><a class="stor-branches-div-card-para6" href="">Contacter cette
+              maison</a></p>
         </div>
         <!-- ? -->
         <!-- ? -->
@@ -305,60 +352,65 @@ d'une pizza bien faite.</p>
           <p class="stor-branches-div-card-para2">Maroc</p>
           <p class="stor-branches-div-card-para3">Émirats arabes unis</p>
           <p class="stor-branches-div-card-para4">Une cuisine ouverte sur le monde, pour
-toutes les envies.</p>
-          <p class="stor-branches-div-card-para5"><a class="stor-branches-div-card-para6" href="">Contacter cette maison</a></p>
+            toutes les envies.</p>
+          <p class="stor-branches-div-card-para5"><a class="stor-branches-div-card-para6" href="">Contacter cette
+              maison</a></p>
         </div>
         <!-- ? -->
       </div>
     </section>
     <!-- todo section befor footer -->
-     <section class="section-befor-footer">
-      
-        <p class="section-befor-footer-para1">Une bonne pizza,<span class="section-befor-footer-para2"> ça se partage.</span></p>
-      
-  
+    <section class="section-befor-footer">
+
+      <p class="section-befor-footer-para1">Une bonne pizza,<span class="section-befor-footer-para2"> ça se
+          partage.</span></p>
+
+
       <button class="section-befor-footer-btn" type="button">On passe à table ?</button>
-     </section>
+    </section>
   </main>
   <!-- ! this is the footer -->
-   <footer class="the-footer">
+  <footer class="the-footer">
     <div class="foter-first-div">
       <div class="foter-first-div-para11">
-      <h1 class="header-title">forno<span class="header-title-point">.</span></h1>
-      <p class="foter-first-div-para1">Une pâte dorée. Une table vivante.</p>
-      <p class="foter-first-div-para1">La bonne part de votre journée.</p>
+        <h1 class="header-title">forno<span class="header-title-point">.</span></h1>
+        <p class="foter-first-div-para1">Une pâte dorée. Une table vivante.</p>
+        <p class="foter-first-div-para1">La bonne part de votre journée.</p>
       </div>
-      <div class="foter-first-div-para5">
-        <p class="foter-first-div-para4">La maison</p>
-        <ul>
-          <li class="foter-first-div-para2"><a class="foter-first-div-para3" href="">Accueil</a></li>
-          <li class="foter-first-div-para2"><a class="foter-first-div-para3" href="">Notre carte</a></li>
-          <li class="foter-first-div-para2"><a class="foter-first-div-para3" href="">A propos de nous</a></li>
-          <li class="foter-first-div-para2"><a class="foter-first-div-para3" href="">Contactez-nous</a></li>
-        </ul>
+      <div style="display: flex;width: 100%;">
+        <div class="foter-first-div-para5">
+          <p class="foter-first-div-para4">La maison</p>
+          <ul>
+            <li class="foter-first-div-para2"><a class="foter-first-div-para3" href="">Accueil</a></li>
+            <li class="foter-first-div-para2"><a class="foter-first-div-para3" href="">Notre carte</a></li>
+            <li class="foter-first-div-para2"><a class="foter-first-div-para3" href="">A propos de nous</a></li>
+            <li class="foter-first-div-para2"><a class="foter-first-div-para3" href="">Contactez-nous</a></li>
+          </ul>
+        </div>
+
+        <div class="foter-first-div-para5">
+          <p class="foter-first-div-para4">Nos horizons</p>
+          <ul>
+            <li class="foter-first-div-para2"><a class="foter-first-div-para3" href="">Casablanca</a></li>
+            <li class="foter-first-div-para2"><a class="foter-first-div-para3" href="">Belgique</a></li>
+            <li class="foter-first-div-para2"><a class="foter-first-div-para3" href="">France</a></li>
+            <li class="foter-first-div-para2"><a class="foter-first-div-para3" href="">Emirats arabes unis</a></li>
+          </ul>
+        </div>
       </div>
-      <div class="foter-first-div-para5">
-        <p class="foter-first-div-para4">Nos horizons</p>
-        <ul>
-          <li class="foter-first-div-para2"><a class="foter-first-div-para3" href="">Casablanca</a></li>
-          <li class="foter-first-div-para2"><a class="foter-first-div-para3" href="">Belgique</a></li>
-          <li class="foter-first-div-para2"><a class="foter-first-div-para3" href="">France</a></li>
-          <li class="foter-first-div-para2"><a class="foter-first-div-para3" href="">Emirats arabes unis</a></li>
-        </ul>
-      </div>
-     
+
       <div class="foter-first-div-para6">
         <p class="foter-first-div-para7">On se retrouve ?</p>
         <p class="foter-first-div-para8">Une question, une grande tablée ou
-une occasion à célébrer.</p>
-<p class="foter-first-div-para9"><a class="foter-first-div-para10" href="">Parlons-en</a></p>
+          une occasion à célébrer.</p>
+        <p class="foter-first-div-para9"><a class="foter-first-div-para10" href="">Parlons-en</a></p>
       </div>
     </div>
     <div class="bfoter-second-div">
       <p class="bfoter-second-div-para1">&copy; 2026 FORNO · La pizza, comme on l'aime.</p>
       <p class="bfoter-second-div-para1">Commandes et messages de démonstration.</p>
     </div>
-   </footer>
+  </footer>
   <script src="script.js"></script>
 </body>
 
