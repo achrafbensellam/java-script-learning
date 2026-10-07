@@ -480,6 +480,15 @@ img {
     border-radius: 5px;
     border: none;
 }
+.greenBTN{
+    background-color: green;
+    color: white;
+    font-weight: 600;
+    cursor: pointer;
+    padding: 2.5%;
+    border-radius: 5px;
+    border: none;
+}
 
 /* todo  fourth section */
 .fourth-section {
@@ -2158,9 +2167,14 @@ img {
 .myCart-div1-para6{
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    /* justify-content: center; */
+    padding-top: 40%;
     align-items: center;
-   height: 50%;
+   height: 100%;
+   /* position: relative;
+    overflow-y: scroll; */
+position: relative;
+
 }
 .myCart-div1-para7{
     font-family: Georgia, "Times New Roman", serif;
@@ -2178,6 +2192,7 @@ img {
     color: #6e6a61;
     width: 60%;
     text-align: center;
+
 }
 .myCart-div1-btn{
     background-color: red;
@@ -2188,4 +2203,132 @@ img {
     font-weight: 600;
     cursor: pointer;
     margin-top: 3%;
+}
+.pizzaQantity{
+position: relative;
+top:0;
+left: 0;
+z-index: 100;
+background-color: white;
+width: 100%;
+}
+.fother-div{
+display: flex;
+width: 100%;
+justify-content: space-between;
+padding: 4%;
+border-bottom: 1px solid rgb(190, 185, 185);
+
+}
+.fother-div-pic{
+width: 23%;
+background-color: rgba(235, 226, 205, 0.776);
+border-radius: 12px;
+}
+.fother-div2{
+    display: flex;
+    gap: 4%;
+}
+
+.fother-div-para2{
+    font-weight: 700;
+    font-size: 20px;
+}
+.fother-div-para3{
+    color: gray;
+    padding: 10% 0%;
+}
+.fother-div-para4{
+    background-color: rgba(128, 128, 128, 0.237);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15% 4%;
+}
+.fother-div-para5{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.fother-div-para6{
+    background-color: rgba(128, 128, 128, 0.237);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15% 4%;
+
+}
+.fother-div-para7{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+.fother-div-para8{
+    font-weight: 700;
+    
+}
+.fother-div-para9{
+    color: gray;
+}
+.fother-div-para10{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    border: 1px solid rgb(207, 202, 202);
+    border-radius: 5px;
+    /* height: 50px; */
+    margin-top: 10%;
+
+}
+.fother-div-picture{
+    width: 100%;
+    height: 100%;
+}
+#addedPizza{
+    overflow-y: scroll;
+    /* scroll-margin-bottom: 200px; */
+    height: 600px;
+    /* width: 30%; */
+    position: absolute;
+    background-color: white;
+    z-index: 500;
+    display: none;
+}
+.chossedPizzaUnder-DIV-para1{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.chossedPizzaUnder-DIV{
+    width: 100%;
+    padding: 4%;
+    /* scroll-margin-bottom: 200px; */
+}
+.chossedPizzaUnder-DIV-para2{
+    font-weight: 600;
+}
+.chossedPizzaUnder-DIV-para3{
+    font-weight: 900;
+    font-size: 25px;
+}
+.chossedPizzaUnder-DIV-para4{
+    color: gray;
+    font-size: 13px;
+    margin: 4% 0%;
+}
+.chossedPizzaUnder-DIV-btn{
+    background-color: red;
+    color: white;
+    padding: 2.5% 7%;
+    border-radius: 7px;
+    border: none;
+    font-weight: 600;
+    cursor: pointer;
+    width: 100%;
+    margin: 6% 0%;
+}
+.chossedPizzaUnder-DIV-para5{
+    color:#a62a1b;
+    font-weight: 600;
+    width: 100%;
 }

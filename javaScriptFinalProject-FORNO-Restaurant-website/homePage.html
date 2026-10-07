@@ -9,11 +9,7 @@
 </head>
 
 <body>
-  <!--* ====================== start besmillah ======================= -->
-  <!-- ! this is the header -->
-  <header>
-    <!-- !!!! cart card -->
-    <div class="myCart1">
+  <div class="myCart1">
       <div class="myCart">
         <div class="foggyview"></div>
         <div class="myCart-div1">
@@ -30,6 +26,17 @@
               </svg>
             </p>
           </div>
+          <div id="addedPizza">
+            <div class="chossedPizzaUnder-DIV" id="chossedPizzaUnderDiv">
+              <div class="chossedPizzaUnder-DIV-para1">
+                <p class="chossedPizzaUnder-DIV-para2">Total du panier</p>
+                <p class="chossedPizzaUnder-DIV-para3">404 MAD</p>
+              </div>
+              <p class="chossedPizzaUnder-DIV-para4">Les frais de livraison sont precises a l'etape suivante</p>
+              <button class="chossedPizzaUnder-DIV-btn">Préparer ma commande</button>
+              <p style="text-align: center;"><a class="chossedPizzaUnder-DIV-para5" href="/homePage.html#laCartDesEnvies"> Ajouter une autre pizza </a></p>
+            </div>
+          </div>
           <div class="myCart-div1-para6">
             <p class="myCart-div1-para7">Une part ?</p>
             <p class="myCart-div1-para8">Votre panier attend sa pizza.</p>
@@ -42,6 +49,14 @@
       </div>
     </div>
 
+  <!--* ====================== start besmillah ======================= -->
+  <!-- ! this is the header -->
+  <header>
+    <!-- !added pizzas -->
+
+    <!-- !added pizzas -->
+    <!-- !!!! cart card -->
+    
     <div class="header">
       <div class="header-title-div">
         <h1 class="header-title">forno<span class="header-title-point">.</span></h1>
@@ -145,7 +160,8 @@
               clip-rule="evenodd" />
           </svg>
 
-          <input id="searchInput" class="pizzas-crds-section-input1" type="text" placeholder="Quelle pizza vous fait envie ?">
+          <input id="searchInput" class="pizzas-crds-section-input1" type="text"
+            placeholder="Quelle pizza vous fait envie ?">
 
         </div>
         <select class="pizzas-crds-section-input2" name="" id="selectCtegory">
@@ -160,7 +176,7 @@
       <!-- ? cards div   -->
       <div class="cards-div">
         <!-- ? Margherita card -->
-        <div class="Margherita-card" id="1">
+        <div class="Margherita-card">
           <div class="image-div">
             <div class="Margherita-pic">
               <img class="Margherita-image" src="public/images/margherita.png" alt="" width="100%">
@@ -175,12 +191,12 @@
             <p style="color: gray;">Sauce tomate, mozzarella & basilic frais.</p>
             <div class="Margherita-card-info-para4">
               <p class="Margherita-card-info-para5">49 <span style="font-size: 13px;">MAD</span></p>
-              <button class="Margherita-card-info-btn" type="button">+ Ajouter</button>
+              <button class="Margherita-card-info-btn" type="button" id="1">+ Ajouter</button>
             </div>
           </div>
         </div>
         <!-- ? diavola card -->
-        <div class="Margherita-card" id="2">
+        <div class="Margherita-card">
           <div class="image-div">
             <div class="Margherita-pic">
               <img src="public/images/diavola.png" alt="" width="100%">
@@ -189,18 +205,18 @@
             <p class=" ORIGINALE">UN PEU DE CARACTERE</p>
             <p class="pizzaNum">02</p>
           </div>
-          <div class="Margherita-card-info" >
+          <div class="Margherita-card-info">
             <p class="Margherita-card-info-para1">ÉPICÉES</p>
             <p class="Margherita-card-info-para2">Diavola</p>
             <p style="color: gray; line-height: 1rem;">Sauce tomate, mozzarella, pepperoni de boouf & piment..</p>
             <div class="Margherita-card-info-para4">
               <p class="Margherita-card-info-para5">69 <span style="font-size: 13px;">MAD</span></p>
-              <button class="Margherita-card-info-btn" type="button">+ Ajouter</button>
+              <button class="Margherita-card-info-btn" id="2" type="button">+ Ajouter</button>
             </div>
           </div>
         </div>
         <!-- ? pollo card -->
-        <div class="Margherita-card" id="3">
+        <div class="Margherita-card">
           <div class="image-div">
             <div class="Margherita-pic">
               <img src="public/images/pollo.png" alt="" width="100%">
@@ -214,12 +230,12 @@
             <p style="color: gray;">Crème, poulet roti, champignons & mozzarella.</p>
             <div class="Margherita-card-info-para4">
               <p class="Margherita-card-info-para5">79 <span style="font-size: 13px;">MAD</span></p>
-              <button class="Margherita-card-info-btn" type="button">+ Ajouter</button>
+              <button class="Margherita-card-info-btn" id="3" type="button">+ Ajouter</button>
             </div>
           </div>
         </div>
         <!-- ? giardino card -->
-        <div class="Margherita-card" id="4">
+        <div class="Margherita-card">
           <div class="image-div">
             <div class="Margherita-pic">
               <img src="public/images/giardino.png" alt="" width="100%">
@@ -234,12 +250,12 @@
             <p style="color: gray;">Sauce tomate, poivrons, champignons & olives.</p>
             <div class="Margherita-card-info-para4">
               <p class="Margherita-card-info-para5">65 <span style="font-size: 13px;">MAD</span></p>
-              <button class="Margherita-card-info-btn" type="button">+ Ajouter</button>
+              <button class="Margherita-card-info-btn" id="4" type="button">+ Ajouter</button>
             </div>
           </div>
         </div>
         <!-- ? tonno card -->
-        <div class="Margherita-card" id="5">
+        <div class="Margherita-card">
           <div class="image-div">
             <div class="Margherita-pic">
               <img src="public/images/tonno.png" alt="" width="100%">
@@ -255,12 +271,12 @@
               mozzarella.</p>
             <div class="Margherita-card-info-para4">
               <p class="Margherita-card-info-para5">75 <span style="font-size: 13px;">MAD</span></p>
-              <button class="Margherita-card-info-btn" type="button">+ Ajouter</button>
+              <button class="Margherita-card-info-btn" id="5" type="button">+ Ajouter</button>
             </div>
           </div>
         </div>
         <!-- ? Quattro Formaggi card -->
-        <div class="Margherita-card" id="6">
+        <div class="Margherita-card">
           <div class="image-div">
             <div class="Margherita-pic">
 
@@ -275,7 +291,7 @@
             <p style="color: gray;">Mozzarella, gorgonzola, chèvre & parmesan.</p>
             <div class="Margherita-card-info-para4">
               <p class="Margherita-card-info-para5">85 <span style="font-size: 13px;">MAD</span></p>
-              <button class="Margherita-card-info-btn" type="button">+ Ajouter</button>
+              <button class="Margherita-card-info-btn" id="6" type="button">+ Ajouter</button>
             </div>
           </div>
         </div>
