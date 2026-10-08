@@ -81,7 +81,7 @@ class Pizza {
         return this.#Qantity = value;
     }
     calcul() {
-        return this.#price + this.#price
+        return this.#price + this.#Qantity
     }
     addItem() { };
     removeItem() { };
@@ -90,7 +90,8 @@ class Pizza {
 
     };
 }
-class CLASSIQUES extends Pizza { };
+class CLASSIQUES extends Pizza { 
+};
 let Margherita = new CLASSIQUES('margherita', 49, 'classique', 10, 1, 'margherita.png');
 let QuattroFormaggi = new CLASSIQUES('quattro formaggi', 85, 'classique', 10, 6, 'quattro-formaggi.png');
 class EPICEES extends Pizza { };
@@ -104,13 +105,6 @@ PizzfoodArray.push(Margherita, QuattroFormaggi, Diavola, Pollo, Tonno, Giardino)
 console.log(PizzfoodArray);
 //! ===============search pizza by name
 let searchInput = document.getElementById('searchInput');
-// let margheritaCard = document.getElementById('1');
-// let diavolaCard = document.getElementById('2');
-// let polloCard = document.getElementById('3');
-// let giardinoCard = document.getElementById('4');
-// let tonnoCard = document.getElementById('5');
-// let QuattroFormaggiCard = document.getElementById('6');
-// diavolaCard.style.display ='none'
 let cards = document.querySelectorAll('.Margherita-card');
 function SearchByName() {
     searchInput.addEventListener('input', () => {
@@ -187,6 +181,7 @@ AddPizzaToBye.forEach((element) => {
                 }
                 pizza.setQantity = pizza.getQantity - 1
                 pizzaQantity()
+
                 // count++
             // hedercart.textContent = count
                 console.log(PizzfoodArray);
@@ -316,8 +311,6 @@ console.log(OrderArray);
     })
     minusBTN.addEventListener('click', () => {
         console.log('dasewqefeefefe');
-        // pizza.calcul();
-        // console.log(pizza.calcul());
         countdiv.classList.remove('fother-div-para55')
         if (counter > 1) {
             counter--
@@ -374,7 +367,7 @@ orderReadyBTN.addEventListener('click',()=>{
    getorderredy.style.display = 'block';
    adedd.style.display = 'none';
    let myCa = document.querySelector('.myCart-div1-para2');
-   myCa.textContent = `Ma commande`
+   myCa.textContent = `Ma commande`;
 
 });
 let retour = document.querySelector('.orderForm-para1');
@@ -382,6 +375,12 @@ retour.addEventListener('click',(e)=>{
     e.preventDefault()
    getorderredy.style.display = 'none';
    adedd.style.display = 'block';
+})
+
+let bonAppetitPagePara13 = document.querySelector('.bonAppetitPagePara13');
+bonAppetitPagePara13.addEventListener('click',()=>{
+bonAppetit.style.display = 'none';
+
 })
 // !======================================================
 let radio1 = document.getElementById('radio1');
@@ -403,6 +402,7 @@ getOrderrReadyform.addEventListener('submit',(e)=>{
         if (radio1.checked) {
             status = radio1.value;
             price = 'gratuit';
+            totalaprice = totalall
         } else if (radio2.checked) {
             status = radio2.value;
             price = 20;
@@ -427,6 +427,16 @@ getOrderrReadyform.addEventListener('submit',(e)=>{
    console.log(readyOrderArray);
    
 });
+let orderFormbtn = document.querySelector('.orderForm-btn');
+let bonAppetit = document.querySelector('.bonAppetit');
+orderFormbtn.addEventListener('click',()=>{
+    if (verifiction()) {
+bonAppetit.style.display = 'block';
+   getorderredy.style.display = 'none';
+   let myCa = document.querySelector('.myCart-div1-para2');
+   myCa.textContent = `Bon appétit.`;
+}
+})
 let readyOrderArray = [];
 function verifiction() {
     const phoneRegex = /^(\+?\d{1,3}[ .\s]?)?\(?\d{3}\)?[ .\s]?\d{3}[ .\s]?\d{4}$/;
@@ -478,4 +488,19 @@ function verifiction() {
         return
     }
     return true;
+}
+function displayinfo() {
+    let bonAppetitPageParadisplay= document.querySelector('.bonAppetitPageParadisplay');
+    for (let i = 0; i < PizzfoodArray.length; i++) {
+        let order = PizzfoodArray[i];
+        let newDIV = document.createElement('div');
+        newDIV.classList.add('bonAppetitPagePara7');
+        newDIV.innerHTML = `
+        <p class="bonAppetitPagePara8">${order.getQantity} x ${order.name}</p>
+        <p class="bonAppetitPagePara9">${order.getQantity*order.getPrice} MAD</p>
+        `
+        bonAppetitPageParadisplay.appendChild(newDIV);
+    }
+    console.log('qwewqe');
+    
 }

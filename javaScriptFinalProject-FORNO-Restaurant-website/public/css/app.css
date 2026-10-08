@@ -2337,11 +2337,11 @@ border-radius: 12px;
     height:700px;
     /* height: 900px; */
     overflow-y: scroll;
-    /* width: 30%; */
+    width: 35%;
     position: absolute;
     background-color: white;
     z-index: 500;
-    /* display: none; */
+    display: none;
     padding: 2%;
 }
 .chossedPizzaUnder-DIV-para1{
@@ -2463,4 +2463,78 @@ border-radius: 12px;
     font-weight: 600;
     cursor: pointer;
     width: 100%;
+}
+/* !!!! */
+.bonAppetitPagePara1{
+    color: #a62a1b;
+}
+.bonAppetitPagePara2{
+    font-size: 29px;
+    font-weight: 800;
+    width: 100%;
+    margin: 1.5% 0%;
+}
+.bonAppetitPagePara3{
+    font-family: Georgia, "Times New Roman", serif;
+  font-style: italic;
+  font-weight: 400;
+  color: #a62a1b;
+}
+.bonAppetitPagePara4{
+    color: gray;
+}
+.bonAppetitPagePara5{
+    border: 1px solid rgb(202, 193, 193);
+    padding: 4%;
+    border-radius: 8px;
+    margin: 2% 0%;
+}
+.bonAppetitPagePara6{
+    color: gray;
+    border-bottom: 0.5px dashed rgb(173, 165, 165);
+    padding: 2% 0%;
+}
+.bonAppetitPagePara7{
+    display: flex;
+    justify-content: space-between;
+    padding: 2% 0%;
+
+}
+.bonAppetitPagePara9{
+    font-weight: 600;
+}
+.bonAppetitPagePara10{
+    color: gray;
+    padding: 1% 0%;
+}
+.bonAppetitPagePara11{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px dashed #b6b2b2;
+    margin-top: 2%;
+    padding-top: 3%;
+}
+.bonAppetitPagePara12{
+    background-color: rgba(195, 186, 186, 0.487);
+    padding: 2% 4%;
+    font-size: 13px;
+    width: fit-content;
+    border-radius: 5px;
+    margin-bottom: 3%;
+}
+.bonAppetitPagePara13{
+    background-color: red;
+   
+    padding: 2.5% 7%;
+    border-radius: 7px;
+    border: none;
+   
+    cursor: pointer;
+    width: 100%;
+}
+.bonAppetitPagePara14{
+     color: white;
+      font-weight: 600;
+      text-decoration: none;
 }
