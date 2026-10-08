@@ -41,9 +41,9 @@ function btnsHitsCart() {
 
     });
     let ajouter = document.querySelector('.chossedPizzaUnder-DIV-para5');
-    ajouter.addEventListener('click',()=>{
+    ajouter.addEventListener('click', () => {
         myCart.style.display = 'none'
-        
+
     })
 }
 btnsHitsCart();
@@ -52,13 +52,13 @@ let PizzfoodArray = [];
 class Pizza {
     #id;
     #price;
-    #stock;
+    #Qantity;
     #pic
-    constructor(name, price, category, stock, id, pic) {
+    constructor(name, price, category, Qantity, id, pic) {
         this.name = name;
         this.#price = price;
         this.category = category;
-        this.#stock = stock;
+        this.#Qantity = Qantity;
         this.#id = id;
         this.#pic = pic
     }
@@ -70,6 +70,18 @@ class Pizza {
     }
     get getPrice() {
         return this.#price
+    }
+    set setPrice(value) {
+        return this.#price = value
+    }
+    get getQantity() {
+        return this.#Qantity
+    }
+    set setQantity(value) {
+        return this.#Qantity = value;
+    }
+    calcul() {
+        return this.#price + this.#price
     }
     addItem() { };
     removeItem() { };
@@ -158,8 +170,8 @@ AddPizzaToBye.forEach((element) => {
         addedPizza.style.display = 'block'
         let gettingID = element.getAttribute('id');
         console.log(gettingID);
-        
-        
+        // let totalall = 0
+
         for (let i = 0; i < PizzfoodArray.length; i++) {
             let pizza = PizzfoodArray[i];
 
@@ -169,13 +181,17 @@ AddPizzaToBye.forEach((element) => {
             if (+gettingID === pizza.getID) {
                 let onlyoneCard = document.querySelector(`.id${PizzfoodArray[i].getID}`);
 
-        if (onlyoneCard) {
-            return;
-        }
+                if (onlyoneCard) {
+
+                    return;
+                }
+                pizza.setQantity = pizza.getQantity - 1
+                pizzaQantity()
+                console.log(PizzfoodArray);
                 chooseQantityPizza.classList.add(`id${PizzfoodArray[i].getID}`);
-                        console.log(PizzfoodArray[i].getID+'dsad');
-            
-                        addedPizza.appendChild(chooseQantityPizza);
+                console.log(PizzfoodArray[i].getID + 'dsad');
+
+                addedPizza.appendChild(chooseQantityPizza);
                 chooseQantityPizza.innerHTML = `
        <div class= "fother-div">
        <div class = 'fother-div2'>
@@ -199,13 +215,24 @@ AddPizzaToBye.forEach((element) => {
        </div>
        </div>
        `
-       addedPizza.insertBefore(
-                       chooseQantityPizza,
-                       chossedPizzaUnderDiv
-                   );
-    }
-    
+                let plusBTN = chooseQantityPizza.querySelector('.fother-div-para6');
+                let minusBTN = chooseQantityPizza.querySelector('.fother-div-para4');
+                let countdiv = chooseQantityPizza.querySelector('.fother-div-para5');
+                let deletelink = chooseQantityPizza.querySelector('.fother-div-para9');
+                BasketQantity(plusBTN, countdiv, pizza, minusBTN,deletelink, chooseQantityPizza, addedPizza);
+                // let total = document.querySelector('.chossedPizzaUnder-DIV-para3');
+                // totalall += pizza.getPrice
+                // total.textContent = totalall
+                
+                addedPizza.insertBefore(
+                    chooseQantityPizza,
+                    chossedPizzaUnderDiv
+                );
+                // deleteCARD(deletelink, chooseQantityPizza, addedPizza)
+            }
+            
         }
+        console.log(OrderArray);
 
     });
 
@@ -214,3 +241,108 @@ AddPizzaToBye.forEach((element) => {
 // let anu = dd.getAttribute("id");
 // console.log(PizzfoodArray.id);
 // document.getAttribute('id')
+// !===========================================
+function pizzaQantity() {
+    let AddPizzaTo = document.querySelectorAll('.ORI2');
+    AddPizzaTo.forEach((element) => {
+        let gettingID = element.getAttribute('id');
+        for (let i = 0; i < PizzfoodArray.length; i++) {
+            let pizza2 = PizzfoodArray[i]
+            //    console.log(pizza2.id);
+            if (+gettingID === pizza2.getID) {
+
+                // let stockQantity = .querySelector('.stockQantity');
+                if (pizza2.getQantity == 0) {
+                    element.textContent = `out of stock : ${pizza2.getQantity}`
+                    element.classList.add('ORI3');
+
+                } else {
+                    element.textContent = `en stock : ${pizza2.getQantity}`
+                    element.classList.remove('ORI3');
+
+                }
+            }
+
+        }
+
+    })
+}
+pizzaQantity()
+// !========================================================
+let totalall = 0;
+function BasketQantity(plusBTN, countdiv, pizza, minusBTN,deletelink, chooseQantityPizza, addedPizza) {
+    let total = document.querySelector('.chossedPizzaUnder-DIV-para3');
+    totalall += pizza.getPrice
+    total.textContent = `${totalall} MAD`
+    let counter = 1;
+    // let totalCounter = pizza.getPrice
+    // let counterminus = pizza.getQantity;
+    plusBTN.addEventListener('click', () => {
+        console.log('asdsad');
+
+        if (pizza.getQantity !== 0) {
+            counter++
+            countdiv.textContent = counter
+            pizza.setQantity = pizza.getQantity - 1
+
+            // console.log(pizzaqantity);
+            pizzaQantity();
+            // totalCounter+=pizza.getPrice
+            // total.textContent = totalCounter
+            // countdiv.classList.remove('fother-div-para55')
+            totalall += pizza.getPrice
+            total.textContent = `${totalall} MAD`
+
+
+        } else {
+            countdiv.classList.add('fother-div-para55')
+            console.log(PizzfoodArray);
+
+        }
+console.log(OrderArray);
+
+    })
+    minusBTN.addEventListener('click', () => {
+        console.log('dasewqefeefefe');
+        // pizza.calcul();
+        // console.log(pizza.calcul());
+        countdiv.classList.remove('fother-div-para55')
+        if (counter > 1) {
+            counter--
+            countdiv.textContent = counter
+            pizza.setQantity = pizza.getQantity + 1
+
+            totalall -= pizza.getPrice
+            total.textContent = `${totalall} MAD`
+            pizzaQantity();
+        }
+
+    })
+    OrderArray.push(totalall)
+console.log(OrderArray);
+deleteCARD(deletelink, chooseQantityPizza, addedPizza)
+function deleteCARD(deletelink, chooseQantityPizza, addedPizza) {
+deletelink.addEventListener('click', (e) => {
+        e.preventDefault();
+        // chooseQantityPizza.innerHTML = '';
+            
+        console.log(totalall);
+
+        totalall -= counter*pizza.getPrice
+        console.log(totalall);
+        pizza.setQantity = pizza.getQantity+counter
+        chooseQantityPizza.remove();
+        pizzaQantity();
+            total.textContent = `${totalall} MAD`
+            if (totalall === 0) {
+                    addedPizza.style.display='none'
+
+            }
+        
+    })
+}
+}
+let OrderArray = [];
+console.log(OrderArray);
+
+// !=================================================
