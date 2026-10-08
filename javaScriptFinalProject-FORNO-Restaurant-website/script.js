@@ -155,38 +155,40 @@ function SearchByCtegory() {
 SearchByCtegory();
 // !=====================================================================
 let AddPizzaToBye = document.querySelectorAll('.Margherita-card-info-btn');
+let count = 0;
 AddPizzaToBye.forEach((element) => {
     let styleDuration;
-
+    
     element.addEventListener('click', () => {
         element.classList.add('greenBTN')
         clearTimeout(styleDuration);
         styleDuration = setTimeout(() => {
             element.classList.remove('greenBTN')
             element.style.transition = '3s ease'
-
+            
         }, 1500);
         let addedPizza = document.getElementById('addedPizza');
         addedPizza.style.display = 'block'
         let gettingID = element.getAttribute('id');
         console.log(gettingID);
         // let totalall = 0
-
+        
         for (let i = 0; i < PizzfoodArray.length; i++) {
             let pizza = PizzfoodArray[i];
-
+            
             let chooseQantityPizza = document.createElement('div');
             let chossedPizzaUnderDiv = document.getElementById('chossedPizzaUnderDiv');
             // chossedPizzaUnderDiv.parentNode.insertBefore(chooseQantityPizza,chossedPizzaUnderDiv)
             if (+gettingID === pizza.getID) {
                 let onlyoneCard = document.querySelector(`.id${PizzfoodArray[i].getID}`);
-
                 if (onlyoneCard) {
-
+                    
                     return;
                 }
                 pizza.setQantity = pizza.getQantity - 1
                 pizzaQantity()
+                // count++
+            // hedercart.textContent = count
                 console.log(PizzfoodArray);
                 chooseQantityPizza.classList.add(`id${PizzfoodArray[i].getID}`);
                 console.log(PizzfoodArray[i].getID + 'dsad');
@@ -219,7 +221,7 @@ AddPizzaToBye.forEach((element) => {
                 let minusBTN = chooseQantityPizza.querySelector('.fother-div-para4');
                 let countdiv = chooseQantityPizza.querySelector('.fother-div-para5');
                 let deletelink = chooseQantityPizza.querySelector('.fother-div-para9');
-                BasketQantity(plusBTN, countdiv, pizza, minusBTN,deletelink, chooseQantityPizza, addedPizza);
+                BasketQantity(plusBTN, countdiv, pizza, minusBTN,deletelink, chooseQantityPizza, addedPizza,count);
                 // let total = document.querySelector('.chossedPizzaUnder-DIV-para3');
                 // totalall += pizza.getPrice
                 // total.textContent = totalall
@@ -269,12 +271,20 @@ function pizzaQantity() {
 }
 pizzaQantity()
 // !========================================================
+let hedercart = document.getElementById('hedercart');
 let totalall = 0;
-function BasketQantity(plusBTN, countdiv, pizza, minusBTN,deletelink, chooseQantityPizza, addedPizza) {
+let con = 0;
+let totalredyOrder = document.querySelector('.totalredyOrder');
+let totalredyOrder2 = document.querySelector('.spisefic');
+function BasketQantity(plusBTN, countdiv, pizza, minusBTN,deletelink, chooseQantityPizza, addedPizza,count) {
     let total = document.querySelector('.chossedPizzaUnder-DIV-para3');
     totalall += pizza.getPrice
     total.textContent = `${totalall} MAD`
+
     let counter = 1;
+    con++
+            hedercart.textContent = con
+    
     // let totalCounter = pizza.getPrice
     // let counterminus = pizza.getQantity;
     plusBTN.addEventListener('click', () => {
@@ -284,7 +294,8 @@ function BasketQantity(plusBTN, countdiv, pizza, minusBTN,deletelink, chooseQant
             counter++
             countdiv.textContent = counter
             pizza.setQantity = pizza.getQantity - 1
-
+            con++
+            hedercart.textContent = con
             // console.log(pizzaqantity);
             pizzaQantity();
             // totalCounter+=pizza.getPrice
@@ -293,7 +304,8 @@ function BasketQantity(plusBTN, countdiv, pizza, minusBTN,deletelink, chooseQant
             totalall += pizza.getPrice
             total.textContent = `${totalall} MAD`
 
-
+totalredyOrder.textContent = `${totalall} MAD`
+    totalredyOrder2.textContent = `${totalall} MAD`
         } else {
             countdiv.classList.add('fother-div-para55')
             console.log(PizzfoodArray);
@@ -311,14 +323,20 @@ console.log(OrderArray);
             counter--
             countdiv.textContent = counter
             pizza.setQantity = pizza.getQantity + 1
+            con--
+            hedercart.textContent = con
 
             totalall -= pizza.getPrice
             total.textContent = `${totalall} MAD`
             pizzaQantity();
+            totalredyOrder.textContent = `${totalall} MAD`
+    totalredyOrder2.textContent = `${totalall} MAD`
         }
 
     })
-    OrderArray.push(totalall)
+    // OrderArray.push(totalall)
+    totalredyOrder.textContent = `${totalall} MAD`
+    totalredyOrder2.textContent = `${totalall} MAD`
 console.log(OrderArray);
 deleteCARD(deletelink, chooseQantityPizza, addedPizza)
 function deleteCARD(deletelink, chooseQantityPizza, addedPizza) {
@@ -338,11 +356,126 @@ deletelink.addEventListener('click', (e) => {
                     addedPizza.style.display='none'
 
             }
-        
+        con-=counter
+                    hedercart.textContent = con
+                    totalredyOrder.textContent = `${totalall} MAD`
+    totalredyOrder2.textContent = `${totalall} MAD`
+
     })
 }
 }
 let OrderArray = [];
 console.log(OrderArray);
-
 // !=================================================
+let orderReadyBTN = document.querySelector('.chossedPizzaUnder-DIV-btn');
+let getorderredy = document.querySelector('.orderForm');
+let adedd = document.getElementById('addedPizza')
+orderReadyBTN.addEventListener('click',()=>{
+   getorderredy.style.display = 'block';
+   adedd.style.display = 'none';
+   let myCa = document.querySelector('.myCart-div1-para2');
+   myCa.textContent = `Ma commande`
+
+});
+let retour = document.querySelector('.orderForm-para1');
+retour.addEventListener('click',(e)=>{
+    e.preventDefault()
+   getorderredy.style.display = 'none';
+   adedd.style.display = 'block';
+})
+// !======================================================
+let radio1 = document.getElementById('radio1');
+let radio2 = document.getElementById('radio2');
+let getOrderrReadyInputName = document.getElementById('getOrderrReadyInputName');
+let getOrderrReadyInputPhone = document.getElementById('getOrderrReadyInputNum');
+let getOrderrReadyform = document.getElementById('getOrderrReadyform');
+let errorForReady = document.getElementById('errorForReady');
+let errorReadyDuration;
+let recuperationWAY = document.getElementById('recuperationWAY');
+let orderFormFrees = document.getElementById('frees');
+getOrderrReadyform.addEventListener('submit',(e)=>{
+    e.preventDefault();
+   if ( verifiction()) {
+       let status;
+        let price;
+        let totalaprice=0;
+
+        if (radio1.checked) {
+            status = radio1.value;
+            price = 'gratuit';
+        } else if (radio2.checked) {
+            status = radio2.value;
+            price = 20;
+            totalaprice =totalall+price
+        }
+       readyOrderArray.push({
+           name:getOrderrReadyInputName.value.trim(),
+           phone : getOrderrReadyInputPhone.value.trim(),
+           status: status,
+           price: price,
+           totalPrice: totalaprice
+        });
+                recuperationWAY.textContent = status;
+            //    readyOrderArray[readyOrderArray.length -1].price = price;
+                orderFormFrees.textContent = price;
+                if (totalall>0) {
+                    let spisefic = document.querySelector('.spisefic');
+                    spisefic.textContent = `${totalaprice} MAD`
+                }
+
+   }
+   console.log(readyOrderArray);
+   
+});
+let readyOrderArray = [];
+function verifiction() {
+    const phoneRegex = /^(\+?\d{1,3}[ .\s]?)?\(?\d{3}\)?[ .\s]?\d{3}[ .\s]?\d{4}$/;
+    if (getOrderrReadyInputName.value.trim() === '') {
+        errorForReady.textContent = 'enter your name please';
+        errorForReady.style.color = 'red';
+        clearTimeout(errorReadyDuration);
+        errorReadyDuration = setTimeout(() => {
+        errorForReady.textContent = '';
+
+        }, 1500);
+        return
+
+    }else if(getOrderrReadyInputPhone.value.trim() === ''){
+        errorForReady.textContent = 'enter your phone number';
+        errorForReady.style.color = 'red';
+        clearTimeout(errorReadyDuration);
+        errorReadyDuration = setTimeout(() => {
+        errorForReady.textContent = '';
+
+        }, 1500);
+        return
+    }else if(phoneRegex.test(getOrderrReadyInputPhone.value.trim()) === false){
+        errorForReady.textContent = 'enter a valid phone number';
+        errorForReady.style.color = 'red';
+        clearTimeout(errorReadyDuration);
+        errorReadyDuration = setTimeout(() => {
+        errorForReady.textContent = '';
+
+        }, 1500);
+        return
+    }else if(!getOrderrReadyInputPhone.value.trim().startsWith('06')){
+        errorForReady.textContent = 'only moroccan phone number';
+        errorForReady.style.color = 'red';
+        clearTimeout(errorReadyDuration);
+        errorReadyDuration = setTimeout(() => {
+        errorForReady.textContent = '';
+
+        }, 1500);
+        return
+    }else if(!radio1.checked && !radio2.checked){
+        errorForReady.textContent = 'Comment récupérer vos pizzas';
+        errorForReady.style.color = 'red';
+        clearTimeout(errorReadyDuration);
+        errorReadyDuration = setTimeout(() => {
+        errorForReady.textContent = '';
+
+        }, 1500);
+        return
+    }
+    return true;
+}
